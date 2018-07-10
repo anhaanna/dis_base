@@ -10,7 +10,7 @@
       <div class="breadcrumb">
         <a class="menu" href="/">Disguise Fragrances</a>
         <span class="right-arrow"><i class="fas fa-angle-right"></i></span>
-        <span class="brd-current">text</span>
+        <span class="brd-current">{{ $product[0]['title'] }}</span>
       </div>
     </div>
   </div>
