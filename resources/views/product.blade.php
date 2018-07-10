@@ -49,11 +49,13 @@
 
       <div class="product-social">
         <ul>
-          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href=""><i class="fab fa-twitter"></i></a></li>
-          <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-          <li><a href=""><i class="fab fa-tumblr"></i></a></li>
-          <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://test.loc&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/intent/tweet?url=http://test.loc/&amp;" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://plus.google.com/share?url=http://test.loc"
+      target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href="https://www.tumblr.com/share/link?url=http://test.loc"
+     target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-tumblr"></i></a></li>
+          <li><a href="https://www.pinterest.com/pin/create/button/?url=http://test.loc" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-pinterest-p"></i></a></li>
         </ul>
       </div>
 
