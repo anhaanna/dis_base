@@ -5,7 +5,7 @@
     <div class="wrap">
       <h1 class="product-h1">TVYAL BAJNI ANUNY</h1>
       <div class="breadcrumb">
-        <a class="menu" href="#">Disguise Fragrances</a>
+        <a class="menu" href="/">Disguise Fragrances</a>
         <span class="right-arrow"><i class="fas fa-angle-right"></i></span>
         <span class="brd-current">text</span>
       </div>
@@ -48,10 +48,10 @@
 
         <div class="categories">
             <h4 class="ctg-h4">CATEGORIES</h4>
-            <div class="category"><a href="#">Men's Deodorants </a> (6)</div> 
-            <div class="category"><a href="#">Men's Perfumes </a> (6)</div> 
-            <div class="category"><a href="#">Women's Deodorants </a> (6)</div> 
-            <div class="category"><a href="#">Women's Perfumes </a> (6)</div>
+            <div class="category"><a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">Men's Deodorants </a> (6)</div> 
+            <div class="category"><a href="{{ route('/product-category',['name'=>'mens-parfumes']) }}">Men's Perfumes </a> (6)</div> 
+            <div class="category"><a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">Women's Deodorants </a> (6)</div> 
+            <div class="category"><a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">Women's Perfumes </a> (6)</div>
         </div>
 
         <div class="rec-viewed">

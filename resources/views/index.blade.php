@@ -43,22 +43,22 @@
         <div id="carousel1" class="owl-carousel owl-theme">
 
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Reflection.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Reflection.jpg') }} " alt="Slider Mens deo- Reflection" title="Slider Mens deo- Reflection"/>
             </div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Carnival.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Carnival.jpg') }} " alt="Slider Mens deo- Carnival" title="Slider Mens deo- Carnival"/>
             </div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Clendestine.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Clendestine.jpg') }} "alt="Slider Mens deo- Clendestine" title="Slider Mens deo- Clendestine"/>
             </div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Masquared.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Masquared.jpg') }} " alt="Slider Mens deo- Masquared" title="Slider Mens deo- Masquared"/>
             </div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Deception.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Deception.jpg') }} " alt="Slider Mens deo- Deception" title="Slider Mens deo- Deception"/>
         	</div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Stimulate.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Stimulate.jpg') }} " alt="Slider Mens deo- Stimulate" title="Slider Mens deo- Stimulate"/>
             </div>
         </div>
     </div>
@@ -69,22 +69,22 @@
         </div>
         <div id="carousel2" class="owl-carousel owl-theme">
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider2/Fog-Blue-Women.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider2/Fog-Blue-Women.jpg') }} " alt="Slider Womens deo- Clendestine" title="Slider Womens deo- Clendestine"/>
         	</div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-Masquared.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-Masquared.jpg') }} " alt="Slider Womens deo- Masquared" title="Slider Womens deo- Masquared"/>
        	 	</div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-Carnival.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-Carnival.jpg') }} " alt="Slider Womens deo- Carnival" title="Slider Womens deo- Carnival"/>
         	</div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-Deception.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-Deception.jpg') }} " alt="Slider Womens deo- Deception" title="Slider Womens deo- Deception"/>
         	</div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-reflection.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-reflection.jpg') }} " alt="Slider Womens deo- Reflection" title="Slider Womens deo- Reflection"/>
        		</div>
             <div class="item">
-            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-Stimulate.jpg') }} " alt="orange tree"/>
+            	<img src=" {{ url('images/sliders/slider2/Slider-Womens-deo-Stimulate.jpg') }} " alt="Slider Womens deo- Stimulate" title="Slider Womens deo- Stimulate"/>
         	</div>
         </div>
     </div>
@@ -95,12 +95,12 @@
   <div class="all-types">
 
     <div class="type type1">
-      	<a href="{{ route('/product-category',['name'=>'man-parfumes'])  }}">
+      	<a href="{{ route('/product-category',['name'=>'mens-parfumes'])  }}">
 
         	<img class="image-types" src=" {{ url('images/all-types/Test-Mens-Perfume.jpg') }} ">
     	</a>
-        <a href="{{ route('/product-category',['name'=>'man-parfumes'])  }}"><span class="black"></span></a>
-        <div class="cnt-h3"><h3>MEN'S PERFUMES</h3></div>
+        <a href="{{ route('/product-category',['name'=>'mens-parfumes'])  }}"><span class="black"></span>
+        <div class="cnt-h3"><h3>MEN'S PERFUMES</h3></div></a>
     </div>
 
     <div class="type type2">
@@ -108,16 +108,16 @@
 
         	<img class="image-types" src=" {{ url('images/all-types/Test-Womens-Perfume.jpg') }} ">
     	  </a>
-        <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}"><span class="black"></span></a>
-        <div class="cnt-h3"><h3>WOMEN'S PERFUMES</h3></div>
+        <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}"><span class="black"></span>
+        <div class="cnt-h3"><h3>WOMEN'S PERFUMES</h3></div></a>
     </div>
 
     <div class="type type3">
-      	<a href="{{ route('/product-category',['name'=>'man-deodorants']) }}">
+      	<a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">
         	<img class="image-types" src=" {{ url('images/all-types/Test-Mens-deos.jpg') }} ">
     	  </a>
-        <a href="{{ route('/product-category',['name'=>'man-deodorants']) }}"><span class="black"></span></a>
-        <div class="cnt-h3"><h3>MEN'S DEODORANTS</h3></div>
+        <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}"><span class="black"></span>
+        <div class="cnt-h3"><h3>MEN'S DEODORANTS</h3></div></a>
     </div>
 
     <div class="type type4">
@@ -125,8 +125,8 @@
 
         	<img class="image-types" src=" {{ url('images/all-types/Test-womens-deos.jpg') }} ">
     	</a>
-        <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}"><span class="black"></span></a>
-        <div class="cnt-h3"><h3>WOMEN'S DEODORANTS</h3></div>
+        <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}"><span class="black"></span>
+        <div class="cnt-h3"><h3>WOMEN'S DEODORANTS</h3></div></a>
     </div>
 
   </div>

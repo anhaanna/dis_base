@@ -118,5 +118,17 @@ $(".sub_li").click(function (e) {
 });
 
 
+/*nav scrolling*/
+
+
+
+/*$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    $('.nav-bar').addClass('nav-fix');
+  } else {
+    $('.nav-bar').removeClass('nav-fix');
+  }
+});*/
+
 
 })

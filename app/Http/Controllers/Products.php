@@ -9,13 +9,13 @@ class Products extends Controller
 {
     public $allproducts;
     public function __construct(){
-        $man_deodorants   = Products_model::where('category','men')->where('subcategory','deodorants')->get();
-        $man_parfumes     = Products_model::where('category','men')->where('subcategory','perfumes')->get();
+        $mens_deodorants   = Products_model::where('category','men')->where('subcategory','deodorants')->get();
+        $mens_parfumes     = Products_model::where('category','men')->where('subcategory','perfumes')->get();
         $women_deodorants = Products_model::where('category','women')->where('subcategory','deodorants')->get();
         $women_parfumes   = Products_model::where('category','women')->where('subcategory','perfumes')->get();
 
-        $allproducts = ['man_deodorants'=>$man_deodorants,
-                        'man_parfumes'=>$man_parfumes,
+        $allproducts = ['mens_deodorants'=>$mens_deodorants,
+                        'mens_parfumes'=>$mens_parfumes,
                         'women_deodorants'=>$women_deodorants,
                         'women_parfumes'=>$women_parfumes
                         ];

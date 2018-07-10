@@ -47,7 +47,7 @@
         </div>
         <div class="right-side">
           <ul class="nav-ul">
-            <li><a href="">HOME</a></li>
+            <li><a href="/">HOME</a></li>
             <li><a href=" {{  route('the-brand/') }} ">THE BRAND</a></li>
             <li class="perfumes"><a href="#">PERFUMES</a>
                 <div class="dropdown dropdown-perfume">
@@ -55,8 +55,8 @@
                     <ul>
                       <li><h3>MEN</h3></li>
 
-                     @foreach($allproducts['man_parfumes'] as $man_parfumes)
-                            <li><a href=" {{ route('/product',['name'=>$man_parfumes['url_title']]) }} ">{{ $man_parfumes['title'] }}</a></li>
+                     @foreach($allproducts['mens_parfumes'] as $mens_parfumes)
+                            <li><a href=" {{ route('/product',['name'=>$mens_parfumes['url_title']]) }} ">{{ $mens_parfumes['title'] }}</a></li>
                      @endforeach
 
                     </ul>
@@ -71,16 +71,16 @@
                   </ul>
                   </div>
                   <div class="nav-box box-3">
-                    <h3>MEN'S PARFUMES</h3>
+                    <a href="{{ route('/product-category',['name'=>'mens-parfumes'])  }}"><h3>MEN'S PARFUMES</h3></a>
                     <div class="nav-img">
 
-                      <a href="{{ route('/product-category',['name'=>'man-parfumes'])  }}">
+                      <a href="{{ route('/product-category',['name'=>'mens-parfumes'])  }}">
                         <img src="{{ url('images/Mens.png') }}">
                       </a>
                     </div>
                   </div>
                   <div class="nav-box box-4">
-                    <h3>WOMEN'S PARFUMES</h3>
+                    <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}"><h3>WOMEN'S PARFUMES</h3></a>
                     <div class="nav-img">
                       <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">
                         <img src=" {{ url('images/Nav-Link-WomenDeo.jpg') }}">
@@ -95,8 +95,8 @@
                   <div class="nav-box box-1">
                     <ul>
                       <li><h3>MEN</h3></li>
-                     @foreach($allproducts['man_deodorants'] as $man_deodorants)
-                            <li><a href=" {{ route('/product',['name'=>$man_deodorants['url_title']]) }} " >{{ $man_deodorants['title'] }}</a></li>
+                     @foreach($allproducts['mens_deodorants'] as $mens_deodorants)
+                            <li><a href=" {{ route('/product',['name'=>$mens_deodorants['url_title']]) }} " >{{ $mens_deodorants['title'] }}</a></li>
                      @endforeach
 
                     </ul>
@@ -110,16 +110,16 @@
                   </ul>
                   </div>
                   <div class="nav-box box-3">
-                    <h3>MEN'S DEODORANTS</h3>
+                    <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}"><h3>MEN'S DEODORANTS</h3></a>
                     <div class="nav-img">
-                      <a href="{{ route('/product-category',['name'=>'man-deodorants']) }}">
+                      <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">
                         <img src=" {{ url('images/Nav-Link-Men-Deo.jpg') }}">
                       </a>
                       {{-- <a href="#"><img src="./assets/images/Nav-Link-Men-Deo.jpg"></a> --}}
                     </div>
                   </div>
                   <div class="nav-box box-4">
-                    <h3>WOMEN'S DEODORANTS</h3>
+                    <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}"><h3>WOMEN'S DEODORANTS</h3></a>
                     <div class="nav-img">
 
                       <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">
@@ -144,7 +144,7 @@
         <div class="wrapper">
           <div class="left"><i class="fas fa-bars"></i></div>
           <div class="center-logo">
-            <a href="#"><img class="logo" src=" {{ url('images/LOGO-PNG.png') }} " alt="light logo"></a>
+            <a href="/"><img class="logo" src=" {{ url('images/LOGO-PNG.png') }} " alt="disguise logo"></a>
           </div>
           <div class="right-side">
             <div class="search-icon"><i class="fas fa-search"></i></div>
@@ -165,63 +165,57 @@
 
 
 
-        <li><a href="http://disguise.ae/" class=" current "><span>Home</span></a></li>
+        <li><a href="/" class=" current "><span>Home</span></a></li>
 
-        <li><a href="http://disguise.ae/the-brand/" class=""><span>The Brand</span></a></li>
+        <li><a href=" {{  route('the-brand/') }} "><span>The Brand</span></a></li>
 
-        <li><a href="#" class=""><span>Perfumes</span></a><span class="mobile_arrow"><i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></span>
+        <li class="sub_li"><a href="#" class=""><span>Perfumes</span></a>
+          <i class="fas fa-angle-right rotate"></i>
             <ul class="sub_menu">
-              <li><a href="#" class=""><span>Men</span></a><span class="mobile_arrow"><i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></span>
+              <li class="sub_li"><a href="#" class=""><span>Men</span></a>
+                <i class="fas fa-angle-right rotate"></i>
                 <ul class="sub_menu">
-                  <li><a href="http://disguise.ae/product/masquerade-men-eau-de-toilette/" class=""><span>Masquerade Men</span></a></li>
-                  <li><a href="http://disguise.ae/product/carnival-men-eau-de-toilette/" class=""><span>Carnival Men</span></a></li>
-                  <li><a href="http://disguise.ae/product/clandestine-men-eau-de-toilette/" class=""><span>Clandestine Men</span></a></li>
-                  <li><a href="http://disguise.ae/product/deception-men-eau-de-toilette/" class=""><span>Deception Men</span></a></li>
-                  <li><a href="http://disguise.ae/product/reflection-men-eau-de-toilette/" class=""><span>Reflection Men</span></a></li>
-                  <li><a href="http://disguise.ae/product/stimulate-men-eau-de-toilette/" class=""><span>Stimulate Men</span></a></li>
+                  @foreach($allproducts['mens_parfumes'] as $mens_parfumes)
+                      <li><a href=" {{ route('/product',['name'=>$mens_parfumes['url_title']]) }} "><span>{{ $mens_parfumes['title'] }}</span></a></li>
+                  @endforeach
               </ul>
             </li>
-            <li><a href="#" class=""><span>Women</span></a><span class="mobile_arrow"><i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></span>
+            <li class="sub_li"><a href="#" class=""><span>Women</span></a>
+              <i class="fas fa-angle-right rotate"></i>
               <ul class="sub_menu">
-                <li><a href="http://disguise.ae/product/masquerade-women-eau-de-toilette/" class=""><span>Masquerade Women</span></a></li>
-                <li><a href="http://disguise.ae/product/carnival-women-eau-de-toilette/" class=""><span>Carnival Women</span></a></li>
-                <li><a href="http://disguise.ae/product/clandestine-women-eau-de-toilette/" class=""><span>Clandestine Women</span></a></li>
-                <li><a href="http://disguise.ae/product/deception-women-eau-de-toilette/" class=""><span>Deception Women</span></a></li>
-                <li><a href="http://disguise.ae/product/reflection-women-eau-de-toilette/" class=""><span>Reflection Women</span></a></li>
-                <li><a href="http://disguise.ae/product/stimulate-women-eau-de-toilette/" class=""><span>Stimulate Women</span></a></li>
+                @foreach($allproducts['women_parfumes'] as $women_parfumes)
+                    <li><a href=" {{ route('/product',['name'=>$women_parfumes['url_title']]) }} ">{{ $women_parfumes['title'] }}</a></li>
+                @endforeach
               </ul>
           </li>
-          <li><a href="http://disguise.ae/product-category/mens-perfumes/" class=""><span>Men’s Perfumes</span></a></li>
-          <li><a href="http://disguise.ae/product-category/women-perfumes/" class=""><span>Women’s Perfumes</span></a></li>
+          <li><a href="{{ route('/product-category',['name'=>'mens-parfumes']) }}"><span>Men’s Perfumes</span></a></li>
+          <li><a href="{{ route('/product-category',['name'=>'women-parfumes']) }}"><span>Women’s Perfumes</span></a></li>
         </ul>
     </li>
 
 
 
-    <li><a href="#" class=""><span>Deodorants</span></a><span class="mobile_arrow"><i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></span>
+    <li class="sub_li"><a href="#" class=""><span>Deodorants</span></a>
+      <i class="fas fa-angle-right rotate"></i>
       <ul class="sub_menu">
-        <li><a href="#" class=""><span>Men</span></a><span class="mobile_arrow"><i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></span>
+        <li class="sub_li"><a href="#" class=""><span>Men</span></a>
+          <i class="fas fa-angle-right rotate"></i>
           <ul class="sub_menu">
-            <li><a href="http://disguise.ae/product/masquerade-men-perfumed-deodorant/" class=""><span>Masquerade Men</span></a></li>
-            <li><a href="http://disguise.ae/product/carnival-men-perfumed-deodorant/" class=""><span>Carnival Men</span></a></li>
-            <li><a href="http://disguise.ae/product/clandestine-men-perfumed-deodorant/" class=""><span>Clandestine Men</span></a></li>
-            <li><a href="http://disguise.ae/product/deception-men-perfumed-deodorant/" class=""><span>Deception Men</span></a></li>
-            <li><a href="http://disguise.ae/product/reflection-men-perfumed-deodorant/" class=""><span>Reflection Men</span></a></li>
-            <li><a href="http://disguise.ae/product/stimulate-men-perfumed-deodorant/" class=""><span>Stimulate Men</span></a></li>
+            @foreach($allproducts['mens_deodorants'] as $mens_deodorants)
+                <li><a href=" {{ route('/product',['name'=>$mens_deodorants['url_title']]) }} " >{{ $mens_deodorants['title'] }}</a></li>
+            @endforeach
           </ul>
       </li>
-      <li><a href="#" class=""><span>Women</span></a><span class="mobile_arrow"><i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></span>
+      <li class="sub_li"><a href="#" class=""><span>Women</span></a>
+        <i class="fas fa-angle-right rotate"></i>
         <ul class="sub_menu">
-          <li><a href="http://disguise.ae/product/masquerade-women-perfumed-deodorant/" class=""><span>Masquerade Women</span></a></li>
-          <li><a href="http://disguise.ae/product/carnival-women-perfumed-deodorant/" class=""><span>Carnival Women</span></a></li>
-          <li><a href="http://disguise.ae/product/clandestine-women-perfumed-deodorant/" class=""><span>Clandestine Women</span></a></li>
-          <li><a href="http://disguise.ae/product/deception-women-perfumed-deodorant/" class=""><span>Deception Women</span></a></li>
-          <li><a href="http://disguise.ae/product/reflection-women-perfumed-deodorant/" class=""><span>Reflection Women</span></a></li>
-          <li><a href="http://disguise.ae/product/stimulate-women-perfumed-deodorant/" class=""><span>Stimulate Women</span></a></li>
+          @foreach($allproducts['women_deodorants'] as $women_deodorants)
+            <li><a href=" {{ route('/product',['name'=>$women_deodorants['url_title']]) }} ">{{ $women_deodorants['title'] }}</a></li>
+          @endforeach
         </ul>
       </li>
-      <li><a href="http://disguise.ae/product-category/mens-deodorants/" class=""><span>Men’s Deodorants</span></a></li>
-      <li><a href="http://disguise.ae/product-category/women-deodorants/" class=""><span>Women’s Deodorants</span></a></li>
+      <li><a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}"><span>Men’s Deodorants</span></a></li>
+      <li><a href="{{ route('/product-category',['name'=>'women-deodorants']) }}"><span>Women’s Deodorants</span></a></li>
     </ul>
 </li>
 
@@ -265,9 +259,9 @@
             <div class="footer-box quick-links">
                 <h4 class="footer-h4">QUICK LINKS</h4>
                 <a href="{{ route('the-brand/') }}">The Brand</a>
-                <a href="{{ route('/product-category',['name'=>'man-parfumes']) }}">Men’s Perfumes</a>
+                <a href="{{ route('/product-category',['name'=>'mens-parfumes']) }}">Men’s Perfumes</a>
                 <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">Women’s Perfumes</a>
-                <a href="{{ route('/product-category',['name'=>'man-deodorants']) }}">Men’s Deodorants</a>
+                <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">Men’s Deodorants</a>
                 <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">Women’s Deodorants</a>
             </div>
             <div class="footer-box twitter-feed">
@@ -402,8 +396,8 @@
       <div class="copyright">
          <p class="center">
             Copyright © 2016 Disguise Fragrances
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use </a>
+            <a href="#"> Privacy Policy</a>
          </p>
       </div>
 

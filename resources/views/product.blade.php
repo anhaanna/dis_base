@@ -8,7 +8,7 @@
     <div class="wrap">
       <h1 class="product-h1">PRODUCT</h1>
       <div class="breadcrumb">
-        <a class="menu" href="#">Disguise Fragrances</a>
+        <a class="menu" href="/">Disguise Fragrances</a>
         <span class="right-arrow"><i class="fas fa-angle-right"></i></span>
         <span class="brd-current">text</span>
       </div>
