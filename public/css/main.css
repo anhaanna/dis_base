@@ -779,6 +779,10 @@ div.search-icon {
     text-decoration: none;
     cursor: pointer;
 }
+a.explore:hover {
+    background-color: #A9A9A9;
+    color: #fff;
+}
 .dis-icon{
     border-radius: 0;
     -webkit-box-shadow: none;
