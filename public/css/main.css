@@ -440,7 +440,7 @@ table.table-product td li {
     display: inline-block;
     color: #fff;
     font-size: 13px; 
-    margin-left: 15px; 
+    margin-left: 40px; 
 }
 a.social {
     margin-right: 5px;
@@ -520,10 +520,16 @@ a.social {
   opacity: 1;
 }
 /*nav*/
-
+.nav-menu {
+    height: 40px;
+    width: 100%;
+    background: #AE8E69;
+    position: absolute;
+    top: 25px;
+}
 .nav-bar {
   position: relative;
-  background: #000;
+  background: #211532;
   height: 90px;
  }
 .nav-fix{
@@ -535,7 +541,7 @@ a.social {
 }
 
 .left-side, .right-side {
-    width: 50%;
+    width: 30%;
     height: 100%;
     position: relative;
 }
@@ -543,6 +549,7 @@ a.social {
   max-height: 80px;
 }
 .right-side{
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
@@ -559,18 +566,20 @@ a.social {
   justify-content: flex-end;
 }
 .pink-right-side {
-    width: 50%;
+    width: 20%;
     height: 100%;
     position: relative;
 }
 .wrapper{
   width: 90%;
-  max-width: 1100px;
+  max-width: 1300px;
   display: flex;
   margin: 0 auto;
 }
 img.logo {
-  width: 150px;
+  position: absolute;
+  top: -16px;
+  background-color: #211532;
 }
 ul.nav-ul {
   padding: 0;
@@ -581,22 +590,21 @@ ul.nav-ul {
   float: right;
 }
 ul.nav-ul li a{
-  padding: 35px 0;
+  padding: 15px 0;
   color: #fff;
   text-decoration: none;
   transition: .3s;
 }
-ul.nav-ul li a:hover{
+/* ul.nav-ul li a:hover{
   color: #8224e3;
-}
+} */
 ul.nav-ul  li {
   padding: 0 10px;
-  line-height: 90px;
   letter-spacing: 2px;
   font-size: 13px;
 }
 .nav-img img {
-  max-width: 230px;
+  max-width: 150px;
 }
 
 .nav-img {
@@ -657,13 +665,13 @@ div.search-icon {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  width: 1100px;
-  right: 0;
+  width: 800px;
+  right: -40%;
   display:flex;
   justify-content: space-between;
   position:absolute;
   top:150px;
-  background: #0E0E0E;
+  background: #fff;
   opacity: 0;
   z-index: -1;
   transition: .3s;
@@ -696,16 +704,16 @@ div.search-icon {
   padding: 20px;
 }
 .nav-box ul li a{
-  color: #b4b4b4;
+  color: #000;
   font-family: 'Raleway',sans-serif;
   letter-spacing: 1px;
   font-size: 13px;
   text-transform: capitalize;
 }
 .nav-box h3{
-  color: #fff;
+  color: #ae8e69;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   line-height: 0px;
   font-weight: 800;
   font-size: 13px;
@@ -798,7 +806,7 @@ a.explore:hover {
 }
 
 ::selection {
-    background: #8224e3;
+    background:#5A3E81;
     color: #fff;
 }
 
@@ -1025,7 +1033,7 @@ form#subscribe-form label{
 footer{
   width: 100%;
   display: block;
-  background-color: #0e0e0e;
+  background-image: url(/images/Strip-Dark-Blue.jpg);
 }
 #footer{
   display: flex;
@@ -1033,24 +1041,28 @@ footer{
   position: relative;
   padding: 50px 0;
 }
-.disguise-about, .quick-links, .twitter-feed{
-  width: 24%;
+.footer-box {
+    width: 30%;
+}
+
+.footer-box.disguise-logo {
+    width: 20%;
+}
+
+
+.ql{
+  display: flex;
+  justify-content: space-between;
 }
 .footer-left{
   width: 70%;
   display: flex;
 }
-.insta-feed {
-  width: 30%;
+.footer-box.disguise-logo img {
+  max-width: 250px;
+  padding-top: 20px;
 }
-ul.insta-posts li {
-    float: left;
-    margin-bottom: 3px;
-    margin-right: 5px;
-    box-sizing: border-box;
-    line-height: 0;
-    position: relative;
-}
+
 
 span.bl {
     width: 100%;
@@ -1086,20 +1098,29 @@ ul.insta-posts li:hover .bl{
   font-family: Raleway,sans-serif;
   padding: 15px 0;
 }
-.social_icons-footer{
-    display: inline-block;
-    color: #fff;
-    
+.footer-box.social_icons-footer {
+   width: 20%;
+    margin-left: 70px;
 }
 .social_icons-footer a{
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 16px;
-    transition: .15s;
+  color: #7899CB;
+  text-decoration: none;
+  font-size: 25px;
+  transition: .15s;
+  margin-right: 40px;
+  max-width: 13px;
+}
+.footer-soc{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-soc div{
+  display: flex;
+  margin-bottom: 20px;
 }
 .social_icons-footer a:hover{
-  color: #8224e3;
+  color: #fff;
 }
 .footer-left{
   width: 70%;
@@ -1112,22 +1133,27 @@ ul.insta-posts li:hover .bl{
     padding: 0 20px;
 }
 .quick-links a{
-  color: #fff;
+  color: #7899CB;
   display: block;
   padding-top: 10px;
-  text-decoration: none;
   transition: .15s;
 }
+.footer-box.disguise-about p {
+    padding: 50px 30px;
+    color: #7899CB;
+    font-size: 14px;
+    font-family: sans-serif;
+}
 .quick-links a:hover, .twitter-feed a:hover, .w-a:hover{
-  color: #8224e3 !important;
+  color: #fff !important;
 }
 .footer-h4{
-    color: #fff;
+    color: #ae8e69;
     margin: 4px 0 14px;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2.6px;
+    letter-spacing: 0.6px;
     line-height: 1.7em;
     font-family: Raleway,sans-serif;
 }
