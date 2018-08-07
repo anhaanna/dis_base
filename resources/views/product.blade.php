@@ -6,7 +6,6 @@
 <div class="product">
   <div class="line-bread">
     <div class="wrap">
-      <h1 class="product-h1">PRODUCT</h1>
       <div class="breadcrumb">
         <a class="menu" href="/">Disguise Fragrances</a>
         <span class="right-arrow"><i class="fas fa-angle-right"></i></span>
@@ -14,6 +13,7 @@
       </div>
     </div>
   </div>
+
 
 
   <div class="middle-product">
@@ -24,21 +24,21 @@
             <img class="big-white" src="{!! url('/images/products/'.$product[0]['photo_white']) !!}">
           </a>
         </div>
-        <div class="big-img-black">
+        <!-- <div class="big-img-black">
           <a href="#">
               <img class="big-black" src="{!! url('/images/products/'.$product[0]['photo_black']) !!} ">
             </a>
-        </div>
-        <div class="small-imgs">
-          <div class="small-image1">
+        </div> -->
+<!--         <div class="small-imgs">
+  <div class="small-image1">
 
-              <img class="small-white" src=" {!! url('/images/products/'.$product[0]['photo_white']) !!} ">
-          </div>
-          <div class="small-image2">
-              <img class="small-black" src=" {!! url('/images/products/'.$product[0]['photo_black']) !!} ">
-          </div>
+      <img class="small-white" src=" {!! url('/images/products/'.$product[0]['photo_white']) !!} ">
+  </div>
+  <div class="small-image2">
+      <img class="small-black" src=" {!! url('/images/products/'.$product[0]['photo_black']) !!} ">
+  </div>
 
-        </div>
+</div> -->
     </div>
     <div class="part-right">
 

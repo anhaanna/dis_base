@@ -16,27 +16,6 @@
     <script type="text/javascript" src=" {{ url('js/main.js') }} "></script>
     <script type="text/javascript" src=" {{ url('js/owl.carousel.min.js') }} "></script>
 </head>
-<!-- <div class="top-bar">
-        <div class="container">
-            <div class="pink-right-side">
-                <a href="{{  route('contact-us/') }}">Contact Us</a>
-                <div class="social_icons">
-                    <a class="social social_facebook" href="https://web.facebook.com/disguisefragrances?_rdc=1&_rdr">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="social social_twitter" href="https://twitter.com/disguiseuae">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="social social_youtube" href="https://www.youtube.com/watch?v=I9pQ1cs68uw">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
   <div class="nav-bar">
     <div class="nav-menu">
@@ -48,9 +27,9 @@
         </div>
         <div class="right-side">
           <ul class="nav-ul">
-            <li><a href="/">HOME</a></li>
-            <li><a href=" {{  route('the-brand/') }} ">THE BRAND</a></li>
-            <li class="perfumes"><a href="#">PERFUMES</a>
+            <li><a href="/">Home</a></li>
+            <li><a href=" {{  route('the-brand/') }} ">The Brand</a></li>
+            <li class="perfumes"><a href="#">Perfumes</a>
                 <div class="dropdown dropdown-perfume">
                   <div class="nav-box box-1">
                     <ul>
@@ -91,7 +70,7 @@
                   </div>
                 </div>
             </li>
-            <li class="deodorants"><a href="#">DEODORANTS</a>
+            <li class="deodorants"><a href="#">Deodorants</a>
               <div class="dropdown dropdown-deodorant">
                   <div class="nav-box box-1">
                     <ul>
@@ -130,6 +109,51 @@
                   </div>
                 </div>
               </li>
+
+              <li class="deodorants"><a href="#">No Gas</a>
+              <div class="dropdown dropdown-deodorant">
+                  <div class="nav-box box-1">
+                    <ul>
+                      <li><h3>MEN</h3></li>
+                     @foreach($allproducts['mens_deodorants'] as $mens_deodorants)
+                            <li><a href=" {{ route('/product',['name'=>$mens_deodorants['url_title']]) }} " >{{ $mens_deodorants['title'] }}</a></li>
+                     @endforeach
+
+                    </ul>
+                  </div>
+                  <div class="nav-box box-2">
+                    <ul>
+                      <li><h3>WOMEN</h3></li>
+                      @foreach($allproducts['women_deodorants'] as $women_deodorants)
+                            <li><a href=" {{ route('/product',['name'=>$women_deodorants['url_title']]) }} ">{{ $women_deodorants['title'] }}</a></li>
+                      @endforeach
+                  </ul>
+                  </div>
+                  <div class="nav-box box-3">
+                    <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}"><h3>MEN'S BODY SPRAY & ROLL-ON</h3></a>
+                    <div class="nav-img">
+                      <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">
+                        <img src=" {{ url('images/ngm3.jpg') }}">
+                      </a>
+                      {{-- <a href="#"><img src="./assets/images/Nav-Link-Men-Deo.jpg"></a> --}}
+                    </div>
+                  </div>
+                  <div class="nav-box box-4">
+                    <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}"><h3>WOMEN'S BODY SPRAY & ROLL-ON</h3></a>
+                    <div class="nav-img">
+
+                      <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">
+                        <img src=" {{ url('images/ngw1.jpg') }} ">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
           </ul>
           <!-- <div class="search-icon"><i class="fas fa-search"></i></div> -->
         </div>
@@ -163,16 +187,16 @@
         <div class="wrapper">
           <div class="left"><i class="fas fa-bars"></i></div>
           <div class="center-logo">
-            <a href="/"><img class="logo" src=" {{ url('images/LOGO-PNG.png') }} " alt="disguise logo"></a>
+            <a href="/"><img class="logo-mobile" src=" {{ url('images/LOGO-PNG.png') }} " alt="disguise logo"></a>
           </div>
-          <div class="right-side">
+          <!-- <div class="right-side">
             <div class="search-icon"><i class="fas fa-search"></i></div>
-          </div>
+          </div> -->
         </div>
-        <div>
-        <input class="search" type="search" placeholder="Search">
-        <i class="fas fa-times"></i>
-      </div>
+       <!--  <div>
+       <input class="search" type="search" placeholder="Search">
+       <i class="fas fa-times"></i>
+             </div> -->
   </div>
 
 

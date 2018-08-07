@@ -34,7 +34,7 @@ $(document).ready(function() {
                 responsiveClass: true,
                 responsiveRefreshRate : 10,
                 nav: true,
-
+                dots: false,
 
               });
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
                 responsiveClass: true,
                 responsiveRefreshRate : 10,
                 nav: true,
-
+                dots: false,
 
               });
 

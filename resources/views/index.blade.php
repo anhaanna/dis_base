@@ -18,30 +18,50 @@
     </div>
 
   <div class="middle-content">
-    <div class="wrapper">
       <div class="middle">
+        <div class="dis-icon">
+          <img src=" {{ url('images/LOGO-PNG.png') }} ">
+        </div>
+
         <div class="about-us">
           <h1 id="ab-us-h1">About us</h1>
           <h2 id="ab-us-h2">OUR FRAGRANCES</h2>
           <p id="ab-us-p">Stay seductively fragrant all day with our exhaustive range of premium perfumes for men and women. The intense perfumes are perfectly complemented by matching deodorant body sprays. There’s a scent for every kind of fragrance connoisseur. Go choose…</p>
           <a class="explore" href="{{ route('the-brand/') }}">EXPLORE MORE</a>
         </div>
-        <div class="dis-icon">
-          <img src=" {{ url('images/LOGO-PNG.png') }} ">
-        </div>
-
-      </div>
+        
     </div>
   </div>
 
+  <div class="brown"></div>
+
+
   <div class="sliders">
+
+
+    <div class="s-item newsletter">
+          <h3 class="b-h3">newsletter</h3>
+          <h4 class="b-h4">Sign up today for our newsletter!</h4>
+          <h5 class="b-h5">Enter you name and email to get the latest updates and offers on Disguise Fragrances.</h5>
+        
+          <form action="" type="" id="subscribe-form ">
+            <input id="name" type="name" name="name" placeholder="NAME">
+            <br>
+            <input id="email" type="email" name="email" required="" placeholder="EMAIL">
+            <br>
+            <input id="btn" type="button" name="subscribe" value="Subscribe">
+          </form>
+        </div>
+
+
     <div class="small-slider slider1">
+      
         <div class="blue">
             <h6>Check Out Our Amazing Men’s Fragrances</h6>
             <h2>A MAN’S SEDUCTION SECRET…</h2>
         </div>
         <div id="carousel1" class="owl-carousel owl-theme">
-
+    
             <div class="item">
             	<img src=" {{ url('images/sliders/slider1/Slider-Mens-deo-Reflection.jpg') }} " alt="Slider Mens deo- Reflection" title="Slider Mens deo- Reflection"/>
             </div>
@@ -92,6 +112,9 @@
   </div>
 
 
+    <div class="brown"></div>
+
+
   <div class="all-types">
 
     <div class="type type1">
@@ -131,7 +154,7 @@
 
   </div>
 
-
+<!--
   <div class="social-items">
     <div class="s-item social-item-youtube">
       <h3 class="b-h3">Youtube Channel</h3>
@@ -148,11 +171,11 @@
         Please refer to our Error Message Reference.
       </p>
     </div>
-    <div class="s-item newsletter">
+     <div class="s-item newsletter">
       <h3 class="b-h3">newsletter</h3>
       <h4 class="b-h4">Sign up today for our newsletter!</h4>
       <h5 class="b-h5">Enter you name and email to get the latest updates and offers on Disguise Fragrances.</h5>
-
+    
       <form action="" type="" id="subscribe-form ">
         <label>Name</label>
         <br>
@@ -164,7 +187,9 @@
         <br>
         <input id="btn" type="button" name="subscribe" value="Subscribe">
       </form>
-    </div>
+    </div> -->
+
+
   </div>
 
 @endsection
