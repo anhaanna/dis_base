@@ -573,7 +573,9 @@ a.social {
     color: #fff;
     text-decoration: none;
     transition: .3s;
-    line-height: 3;
+    line-height: 3;    
+    letter-spacing: 2px;
+    font-size: 13px;
 }
 .pink-right-side{
   display: flex;
