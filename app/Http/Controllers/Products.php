@@ -13,11 +13,15 @@ class Products extends Controller
         $mens_parfumes     = Products_model::where('category','men')->where('subcategory','perfumes')->get();
         $women_deodorants = Products_model::where('category','women')->where('subcategory','deodorants')->get();
         $women_parfumes   = Products_model::where('category','women')->where('subcategory','perfumes')->get();
+        $men_nogas = Products_model::where('category','men')->where('subcategory','nogas')->get();
+        $women_nogas   = Products_model::where('category','women')->where('subcategory','nogas')->get();
 
         $allproducts = ['mens_deodorants'=>$mens_deodorants,
                         'mens_parfumes'=>$mens_parfumes,
                         'women_deodorants'=>$women_deodorants,
-                        'women_parfumes'=>$women_parfumes
+                        'women_parfumes'=>$women_parfumes,
+                        'men_nogas'=>$men_nogas,
+                        'women_nogas'=>$women_nogas,
                         ];
         $this->allproducts = $allproducts;
     }

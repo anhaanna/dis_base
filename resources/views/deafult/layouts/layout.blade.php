@@ -115,8 +115,8 @@
                   <div class="nav-box box-1">
                     <ul>
                       <li><h3>MEN</h3></li>
-                     @foreach($allproducts['mens_deodorants'] as $mens_deodorants)
-                            <li><a href=" {{ route('/product',['name'=>$mens_deodorants['url_title']]) }} " >{{ $mens_deodorants['title'] }}</a></li>
+                     @foreach($allproducts['men_nogas'] as $men_nogas)
+                            <li><a href=" {{ route('/product',['name'=>$men_nogas['url_title']]) }} " >{{ $men_nogas['title'] }}</a></li>
                      @endforeach
 
                     </ul>
@@ -124,25 +124,25 @@
                   <div class="nav-box box-2">
                     <ul>
                       <li><h3>WOMEN</h3></li>
-                      @foreach($allproducts['women_deodorants'] as $women_deodorants)
-                            <li><a href=" {{ route('/product',['name'=>$women_deodorants['url_title']]) }} ">{{ $women_deodorants['title'] }}</a></li>
+                      @foreach($allproducts['women_nogas'] as $women_nogas)
+                            <li><a href=" {{ route('/product',['name'=>$women_nogas['url_title']]) }} ">{{ $women_nogas['title'] }}</a></li>
                       @endforeach
                   </ul>
                   </div>
                   <div class="nav-box box-3">
-                    <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}"><h3>MEN'S BODY SPRAY & ROLL-ON</h3></a>
+                    <a href="{{ route('/product-category',['name'=>'men-nogas']) }}"><h3>MEN'S BODY SPRAY & ROLL-ON</h3></a>
                     <div class="nav-img">
-                      <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">
+                      <a href="{{ route('/product-category',['name'=>'men-nogas']) }}">
                         <img src=" {{ url('images/ngm3.jpg') }}">
                       </a>
                       {{-- <a href="#"><img src="./assets/images/Nav-Link-Men-Deo.jpg"></a> --}}
                     </div>
                   </div>
                   <div class="nav-box box-4">
-                    <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}"><h3>WOMEN'S BODY SPRAY & ROLL-ON</h3></a>
+                    <a href="{{ route('/product-category',['name'=>'women-nogas']) }}"><h3>WOMEN'S BODY SPRAY & ROLL-ON</h3></a>
                     <div class="nav-img">
 
-                      <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">
+                      <a href="{{ route('/product-category',['name'=>'women-nogas']) }}">
                         <img src=" {{ url('images/ngw1.jpg') }} ">
                       </a>
                     </div>
@@ -150,13 +150,11 @@
                 </div>
               </li>
 
-
-
-
-
           </ul>
-          <!-- <div class="search-icon"><i class="fas fa-search"></i></div> -->
         </div>
+
+
+
         <div class="pink-right-side">
                 <a href="{{  route('contact-us/') }}">Contact Us</a>
                 <div class="social_icons">
@@ -172,14 +170,13 @@
                     <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/">
                         <i class="fab fa-instagram"></i>
                     </a>
+                    <a href="/images/Brochure.pdf" download="Brochure">
+                        <i class="fas fa-download"></i>
+                    </a>
                 </div>
             </div>
       </div>
       </div>
-      <!-- <div>
-        <input class="search" type="search" placeholder="Search">
-        <i class="fas fa-times"></i>
-          </div> -->
 </div>
 
 
@@ -189,15 +186,8 @@
           <div class="center-logo">
             <a href="/"><img class="logo-mobile" src=" {{ url('images/LOGO-PNG.png') }} " alt="disguise logo"></a>
           </div>
-          <!-- <div class="right-side">
-            <div class="search-icon"><i class="fas fa-search"></i></div>
-          </div> -->
         </div>
-       <!--  <div>
-       <input class="search" type="search" placeholder="Search">
-       <i class="fas fa-times"></i>
-             </div> -->
-  </div>
+    </div>
 
 
   <!-- hamburger -->
@@ -262,6 +252,52 @@
     </ul>
 </li>
 
+<li class="sub_li"><a href="#" class=""><span>No Gas</span></a>
+      <i class="fas fa-angle-right rotate"></i>
+      <ul class="sub_menu">
+        <li class="sub_li"><a href="#" class=""><span>Men</span></a>
+          <i class="fas fa-angle-right rotate"></i>
+          <ul class="sub_menu">
+            @foreach($allproducts['men_nogas'] as $men_nogas)
+                <li><a href=" {{ route('/product',['name'=>$men_nogas['url_title']]) }} " >{{ $men_nogas['title'] }}</a></li>
+            @endforeach
+          </ul>
+      </li>
+      <li class="sub_li"><a href="#" class=""><span>Women</span></a>
+        <i class="fas fa-angle-right rotate"></i>
+        <ul class="sub_menu">
+          @foreach($allproducts['women_nogas'] as $women_nogas)
+            <li><a href=" {{ route('/product',['name'=>$women_nogas['url_title']]) }} ">{{ $women_nogas['title'] }}</a></li>
+          @endforeach
+        </ul>
+      </li>
+      <li><a href="{{ route('/product-category',['name'=>'men-nogas']) }}"><span>Men’s No Gas</span></a></li>
+      <li><a href="{{ route('/product-category',['name'=>'women-nogas']) }}"><span>Women’s No Gas</span></a></li>
+    </ul>
+</li>
+
+
+<li><a href="{{  route('contact-us/') }}"><span>Contact Us</span></a></li>
+      <li>
+              <div class="social_icons-mob">
+                    <a class="social social_facebook" href="https://web.facebook.com/disguisefragrances?_rdc=1&_rdr">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social social_twitter" href="https://twitter.com/disguiseuae">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social social_youtube" href="https://www.youtube.com/watch?v=I9pQ1cs68uw">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="/images/Brochure.pdf" download="Brochure">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+      </li>
+
 
 
 </ul>
@@ -281,7 +317,7 @@
         <div id="footer">
             <div class="footer-box disguise-logo">
               <a href="http://disguise.ae">
-                <img src="/images/LOGO-PNG.png" alt="logo">
+                <img src=" {{ url('images/LOGO-PNG.png') }} " alt="logo">
               </a>
             </div>
             <div class="footer-box disguise-about">

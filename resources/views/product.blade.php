@@ -20,26 +20,14 @@
     <div class="flex-mid">
     <div class="part-left">
         <div class="big-img-white">
-          <a href="#">
+
             <img class="big-white" src="{!! url('/images/products/'.$product[0]['photo_white']) !!}">
-          </a>
+
         </div>
-        <!-- <div class="big-img-black">
-          <a href="#">
-              <img class="big-black" src="{!! url('/images/products/'.$product[0]['photo_black']) !!} ">
-            </a>
-        </div> -->
-<!--         <div class="small-imgs">
-  <div class="small-image1">
-
-      <img class="small-white" src=" {!! url('/images/products/'.$product[0]['photo_white']) !!} ">
-  </div>
-  <div class="small-image2">
-      <img class="small-black" src=" {!! url('/images/products/'.$product[0]['photo_black']) !!} ">
-  </div>
-
-</div> -->
     </div>
+
+
+
     <div class="part-right">
 
     <!-- AYSTEX DESCRIPTION -->
@@ -64,63 +52,51 @@
   </div>
 
 
-
+      <div class="purple">
+          <div class="cat-content">
+            <h4 class="rec rec-h4">RELATED PRODUCTS</h4>
+          </div>
+        </div>
 
   <div class="rel-products">
      <div class="mid">
-        <div class="rel-h5"><h5>RELATED PRODUCTS</h5></div>
-
         <div class="rel-items">
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
+                  <a href="#"><img src="/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
                 </div>
-                <div class="rel-item-black">
+                <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
-                </div>
+                </div> -->
                 <div class="read-more">
-                  <a href="#"><p>READ MORE +</p></a>
+                  <a href="#"><p>READ MORE</p></a>
                 </div>
             </div>
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
+                  <a href="#"><img src="/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
                 </div>
-                <div class="rel-item-black">
+                <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
-                </div>
+                </div> -->
                 <div class="read-more">
-                  <a href="#"><p>READ MORE +</p></a>
+                  <a href="#"><p>READ MORE</p></a>
                 </div>
             </div>
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
+                  <a href="#"><img src="/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
                 </div>
-                <div class="rel-item-black">
+                <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
-                </div>
+                </div> -->
                 <div class="read-more">
-                  <a href="#"><p>READ MORE +</p></a>
+                  <a href="#"><p>READ MORE</p></a>
                 </div>
             </div>
-
-            <div class="rel-item">
-                <div class="rel-item-white">
-                  <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
-                </div>
-                <div class="rel-item-black">
-                  <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
-                </div>
-                <div class="read-more">
-                  <a href="#"><p>READ MORE +</p></a>
-                </div>
-            </div>
-
-
 
         </div>
      </div>

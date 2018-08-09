@@ -117,7 +117,7 @@
 
   <div class="all-types">
 
-    <div class="type type1">
+    <div class="type">
       	<a href="{{ route('/product-category',['name'=>'mens-parfumes'])  }}">
 
         	<img class="image-types" src=" {{ url('images/all-types/Test-Mens-Perfume.jpg') }} ">
@@ -126,7 +126,7 @@
         <div class="cnt-h3"><h3>MEN'S PERFUMES</h3></div></a>
     </div>
 
-    <div class="type type2">
+    <div class="type">
       	<a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">
 
         	<img class="image-types" src=" {{ url('images/all-types/Test-Womens-Perfume.jpg') }} ">
@@ -135,7 +135,7 @@
         <div class="cnt-h3"><h3>WOMEN'S PERFUMES</h3></div></a>
     </div>
 
-    <div class="type type3">
+    <div class="type">
       	<a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">
         	<img class="image-types" src=" {{ url('images/all-types/Test-Mens-deos.jpg') }} ">
     	  </a>
@@ -143,13 +143,31 @@
         <div class="cnt-h3"><h3>MEN'S DEODORANTS</h3></div></a>
     </div>
 
-    <div class="type type4">
+    <div class="type">
       	<a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">
 
         	<img class="image-types" src=" {{ url('images/all-types/Test-womens-deos.jpg') }} ">
     	</a>
         <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}"><span class="black"></span>
         <div class="cnt-h3"><h3>WOMEN'S DEODORANTS</h3></div></a>
+    </div>
+
+    <div class="type">
+        <a href="{{ route('/product-category',['name'=>'men-nogas']) }}">
+
+          <img class="image-types" src=" {{ url('images/all-types/ngm.jpg') }} ">
+      </a>
+        <a href="{{ route('/product-category',['name'=>'men-nogas']) }}"><span class="black"></span>
+        <div class="cnt-h3"><h3>MEN'S NO GAS</h3></div></a>
+    </div>
+
+    <div class="type">
+        <a href="{{ route('/product-category',['name'=>'women-nogas']) }}">
+
+          <img class="image-types" src=" {{ url('images/all-types/ngw.jpg') }} ">
+      </a>
+        <a href="{{ route('/product-category',['name'=>'women-nogas']) }}"><span class="black"></span>
+        <div class="cnt-h3"><h3>WOMEN'S NO GAS</h3></div></a>
     </div>
 
   </div>
