@@ -55,7 +55,7 @@
                     <div class="nav-img">
 
                       <a href="{{ route('/product-category',['name'=>'mens-parfumes'])  }}">
-                        <img src="{{ url('images/Mens.png') }}">
+                        <img src="{{ url('images/m1.jpg') }}">
                       </a>
                     </div>
                   </div>
@@ -63,7 +63,7 @@
                     <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}"><h3>WOMEN'S PARFUMES</h3></a>
                     <div class="nav-img">
                       <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">
-                        <img src=" {{ url('images/Nav-Link-WomenDeo.jpg') }}">
+                        <img src=" {{ url('images/w1.jpg') }}">
                       </a>
 
                     </div>
@@ -93,7 +93,7 @@
                     <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}"><h3>MEN'S DEODORANTS</h3></a>
                     <div class="nav-img">
                       <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">
-                        <img src=" {{ url('images/Nav-Link-Men-Deo.jpg') }}">
+                        <img src=" {{ url('images/m2.jpg') }}">
                       </a>
                       {{-- <a href="#"><img src="./assets/images/Nav-Link-Men-Deo.jpg"></a> --}}
                     </div>
@@ -103,7 +103,7 @@
                     <div class="nav-img">
 
                       <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">
-                        <img src=" {{ url('images/women-1.jpg') }} ">
+                        <img src=" {{ url('images/w2.jpg') }} ">
                       </a>
                     </div>
                   </div>
@@ -316,7 +316,7 @@
       <div class="wrapper">
         <div id="footer">
             <div class="footer-box disguise-logo">
-              <a href="http://disguise.ae">
+              <a href="/">
                 <img src=" {{ url('images/LOGO-PNG.png') }} " alt="logo">
               </a>
             </div>
@@ -330,16 +330,16 @@
                   <div class="ql">
                     <div>
                       <a href="{{ route('the-brand/') }}">The Brand</a>
+                      <a href="{{ route('contact-us/') }}">Contact Us</a>
                       <a href="{{ route('/product-category',['name'=>'mens-parfumes']) }}">Men’s Perfumes</a>
                       <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">Women’s Perfumes</a>
-                      <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">Men’s Deodorants</a>
-                      <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">Women’s Deodorants</a>
+
                     </div>
                     <div>
                       <a href="{{ route('/product-category',['name'=>'mens-parfumes']) }}">Men’s Perfumes</a>
                       <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">Women’s Perfumes</a>
-                      <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">Men’s Deodorants</a>
-                      <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">Women’s Deodorants</a>
+                      <a href="{{ route('/product-category',['name'=>'men-nogas']) }}">Men’s No Gas</a>
+                      <a href="{{ route('/product-category',['name'=>'women-nogas']) }}">Women’s No Gas</a>
                     </div>
                   </div>
               </div>
@@ -383,8 +383,8 @@
       <div class="copyright">
          <p class="center">
             Copyright © 2016 Disguise Fragrances
-            <a href="#">Terms of Use </a>
-            <a href="#"> Privacy Policy</a>
+            <!-- <a href="#">Terms of Use </a>
+            <a href="#"> Privacy Policy</a> -->
          </p>
       </div>
 

@@ -6,7 +6,8 @@
    <div class="text-img">
      <span class="txt">
        <h1>CONTACT US</h1>
-       <p>We are just a phone or email away. Contact us for trade enquiry in your market.</p>
+       <p>We are just a phone or email away. <br>
+       Contact us for trade enquiry in your market.</p>
      </span>
     </div>
 </div>
