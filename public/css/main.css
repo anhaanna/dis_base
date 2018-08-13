@@ -457,7 +457,7 @@ img.big-white {
     display: inline-block;
     color: #fff;
     font-size: 13px; 
-    margin-left: 40px; 
+    margin-left: 20px; 
 }
 a.social {
     margin-right: 5px;
@@ -558,7 +558,7 @@ a.social {
 }
 
 .left-side, .right-side {
-    width: 30%;
+    width: 20%;
     height: 100%;
     position: relative;
 }
@@ -587,9 +587,12 @@ a.social {
   justify-content: flex-end;
 }
 .pink-right-side {
-    width: 20%;
+    width: 30%;
     height: 100%;
     position: relative;
+}
+.pd-a{
+  padding-left: 20px;
 }
 .wrapper{
   width: 90%;

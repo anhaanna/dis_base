@@ -156,7 +156,10 @@
 
 
         <div class="pink-right-side">
-                <a href="{{  route('contact-us/') }}">Contact Us</a>
+                <a class="pd-a" href="{{  route('contact-us/') }}">Contact Us</a>
+                <a style="color: #211532;" class="pd-a" href="{{ url('images/Brochure.pdf') }}" download="Catalogue">
+                        Catalogue <i class="fas fa-download"></i>
+                    </a>
                 <div class="social_icons">
                     <a class="social social_facebook" href="https://web.facebook.com/disguisefragrances?_rdc=1&_rdr">
                         <i class="fab fa-facebook-f"></i>
@@ -170,9 +173,9 @@
                     <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="{{ url('images/Brochure.pdf') }}" download="Brochure">
+                    <!-- <a href="{{ url('images/Brochure.pdf') }}" download="Brochure">
                         <i class="fas fa-download"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
       </div>
