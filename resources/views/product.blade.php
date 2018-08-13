@@ -64,7 +64,7 @@
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
+                  <a href="#"><img src="{!! url('/images/related/10-Carnival-Women-Perfume-White-300x300.jpg') !!}"></a>
                 </div>
                 <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
@@ -76,7 +76,7 @@
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
+                  <a href="#"><img src="{!! url('/images/related/10-Carnival-Women-Perfume-White-300x300.jpg') !!}"></a>
                 </div>
                 <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
@@ -88,7 +88,7 @@
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="/images/related/10-Carnival-Women-Perfume-White-300x300.jpg"></a>
+                  <a href="#"><img src="{!! url('/images/related/10-Carnival-Women-Perfume-White-300x300.jpg') !!}"></a>
                 </div>
                 <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>

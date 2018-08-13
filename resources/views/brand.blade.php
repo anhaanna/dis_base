@@ -12,7 +12,7 @@
 
   <div class="brand-content">
       <div class="brand-left">
-        <img src="/images/msqred.jpg">
+        <img src=" {{ url('images/msqred.jpg') }} ">
       </div>
       <div class="brand-about about-us">
         <h1 id="ab-us-h1">AN UNFORGETTABLE SCENT TRAIL</h1>

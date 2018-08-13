@@ -4,17 +4,20 @@
 
 <div id="carousel" class="owl-carousel owl-theme">
         <div class="item">
-        	<img src="{{ url('images/big-slide/disguise-website-banner-oct-2016-NEW.jpg') }} " alt="orange tree"/>
+          <img src=" {{ url('images/big-slide/depo.jpg') }} " alt="orange tree"/>
+        </div>
+        <!-- <div class="item">
+          <img src="{{ url('images/big-slide/disguise-website-banner-oct-2016-NEW.jpg') }} " alt="orange tree"/>
         </div>
         <div class="item">
-        	<img src=" {{ url('images/big-slide/Main-Banner-2-1.jpg') }} " alt="orange tree"/>
+          <img src=" {{ url('images/big-slide/Main-Banner-2-1.jpg') }} " alt="orange tree"/>
         </div>
         <div class="item">
-        	<img src=" {{ url('images/big-slide/Banner-2-Masqured-Fragrance.jpg') }} " alt="orange tree"/>
+          <img src=" {{ url('images/big-slide/Banner-2-Masqured-Fragrance.jpg') }} " alt="orange tree"/>
         </div>
         <div class="item">
-        	<img src=" {{ url('images/big-slide/Banner-3-Carnival-Fragrances.jpg') }} " alt="orange tree"/>
-        </div>
+          <img src=" {{ url('images/big-slide/Banner-3-Carnival-Fragrances.jpg') }} " alt="orange tree"/>
+        </div> -->
     </div>
 
   <div class="middle-content">

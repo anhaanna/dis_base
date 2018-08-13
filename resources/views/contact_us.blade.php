@@ -72,21 +72,42 @@
               <strong>Please submit your details below. Alternatively email us at <br>info@brandskonnect.com</strong>
             </p>
           </div>
-          <form>
-            <div  class="cont-form">
+          <form method="post" action="{{route('contact-us.store')}}">
+            {{ csrf_field() }}
+            <div class="cont-form">
+              @if(Session::has('flash_message'))
+                  <div class="thank-you">{{ Session::get('flash_message') }}</div>
+                @endif
               <div class="row row-brd">
                 <input class="pink-bg" type="text" name="name" placeholder="Name">
+                @if($errors->has('name'))
+                  <div class="errors">{{ $errors->first('name') }}</div>
+                @endif
                 <input class="pink-bg" type="email" name="email" placeholder="Email">
+                @if($errors->has('email'))
+                  <div class="errors">{{ $errors->first('email') }}</div>
+                @endif
               </div>
               <div class="row row-brd">
                 <input class="pink-bg" type="text" name="contact" placeholder="Contact">
+                @if($errors->has('contact'))
+                  <div class="errors">{{ $errors->first('contact') }}</div>
+                @endif
                 <input class="pink-bg" type="text" name="subject" placeholder="Subject">
+                @if($errors->has('subject'))
+                  <div class="errors">{{ $errors->first('subject') }}</div>
+                @endif
               </div>
               <div class="row">
-                <textarea placeholder="Message" class="pink-bg"></textarea>
+                <textarea name="message" placeholder="Message" class="pink-bg"></textarea>
+                @if($errors->has('message'))
+                  <div class="errors">{{ $errors->first('message') }}</div>
+                @endif
               </div>
             </div>
-            <input class="send" type="submit" name="send" value="Send">
+            <button class="send" name="send">
+              Send
+            </button>
           </form>
         </div>
       </div>

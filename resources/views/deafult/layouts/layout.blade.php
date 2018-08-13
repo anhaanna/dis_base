@@ -170,7 +170,7 @@
                     <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="/images/Brochure.pdf" download="Brochure">
+                    <a href="{{ url('images/Brochure.pdf') }}" download="Brochure">
                         <i class="fas fa-download"></i>
                     </a>
                 </div>
