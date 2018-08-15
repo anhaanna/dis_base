@@ -40,7 +40,13 @@ table.table-product td li {
     border: 1px solid #b13259;
     background: #b1325940;
 }
-
+.subscription{
+    width: 369px;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #b13259;
+    background: #b1325940;
+}
 /* product-category */
 .cat-content {
   width: 90%;
@@ -542,7 +548,7 @@ a.social {
     width: 100%;
     background: #AE8E69;
     position: absolute;
-    top: 25px;
+    top: 20px;
 }
 .nav-bar {
   position: relative;
@@ -1514,17 +1520,21 @@ p.center {
 .cont-form {
   margin-top: 10px;
   padding: 10px 0;
-/*   border: 1px solid #8080804f; */
+  display: flex;
 }
 .row-brd{
-/*   border-bottom: 1px solid #8080804f; */
-  margin-bottom: 6px;
+  width: 50%;
+  margin: 0 5px 0 0;
 }
 .row {
-  display: flex;  
+  width: 100%; 
 }
 .pink-bg:focus{
   border-bottom:1px solid #b13259 !important;
+}
+.errors {
+    color: red;
+    text-align: center;
 }
 .send{
   display: inline-block;
@@ -1611,8 +1621,8 @@ nav.hamburger-nav ul {
 }
 nav.hamburger-nav ul li {
   margin: 0 30px;
-  padding: 10px 0;
-
+  padding: 10px 0;    
+  font-size: 16px;
 }
 nav.hamburger-nav ul li:not(:last-child){
     border-bottom: 1px solid #fff;
@@ -1707,9 +1717,6 @@ i.fas.fa-angle-down {
   .about-us{
     padding: 30px;
   }
-  #name, #email {
-    width: 270px;
-  }
   .small-slider h2{
     font-size: 16px;
   }
@@ -1725,10 +1732,6 @@ i.fas.fa-angle-down {
   .flex-mid{
     flex-wrap: wrap;
   }
-/*   .read-more{
-  opacity: 1;
-  padding: 13px 0;
-} */
   .top-img {
     margin-top: 0;
   }

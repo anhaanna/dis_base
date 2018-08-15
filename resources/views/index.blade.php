@@ -47,12 +47,19 @@
           <h4 class="b-h4">Sign up today for our newsletter!</h4>
           <h5 class="b-h5">Enter you name and email to get the latest updates and offers on Disguise Fragrances.</h5>
         
-          <form action="" type="" id="subscribe-form ">
-            <input id="name" type="name" name="name" placeholder="NAME">
+          <form id="subscribe-form" method="post" action="{{route('home.newsletter')}}">
+
+            {{ csrf_field() }}
+            @if(Session::has('flash_message'))
+              <div class="subscription">{{ Session::get('flash_message') }}</div>
+            @endif
+            <input id="name" type="name" name="sub_name" required="" placeholder="NAME">
             <br>
-            <input id="email" type="email" name="email" required="" placeholder="EMAIL">
+            <input id="email" type="email" name="sub_email" required="" placeholder="EMAIL">
             <br>
-            <input id="btn" type="button" name="subscribe" value="Subscribe">
+            <button id="btn" name="subscribe">
+              Subscribe
+            </button>
           </form>
         </div>
 
@@ -174,42 +181,6 @@
     </div>
 
   </div>
-
-<!--
-  <div class="social-items">
-    <div class="s-item social-item-youtube">
-      <h3 class="b-h3">Youtube Channel</h3>
-      <iframe class="iframe" width="595" height="240" src="https://www.youtube.com/embed/I9pQ1cs68uw?feature=oembed" frameborder="0" allowfullscreen=""></iframe>
-    </div>
-    <div class="s-item social-item-facebook">
-      <h3 class="b-h3">FACEBOOK UPDATES</h3>
-      <p class="no-fb">Unable to display Facebook posts.</p>
-      <p class="fb-error">Show error</p>
-      <p class="show-fb-error">
-        <br>Error: Error validating application. Application has been deleted. <br><br>
-        Type: OAuthException <br><br>
-        Code: 190 <br><br>
-        Please refer to our Error Message Reference.
-      </p>
-    </div>
-     <div class="s-item newsletter">
-      <h3 class="b-h3">newsletter</h3>
-      <h4 class="b-h4">Sign up today for our newsletter!</h4>
-      <h5 class="b-h5">Enter you name and email to get the latest updates and offers on Disguise Fragrances.</h5>
-    
-      <form action="" type="" id="subscribe-form ">
-        <label>Name</label>
-        <br>
-        <input id="name" type="name" name="name">
-        <br>
-        <label>Email *</label>
-        <br>
-        <input id="email" type="email" name="email" required="">
-        <br>
-        <input id="btn" type="button" name="subscribe" value="Subscribe">
-      </form>
-    </div> -->
-
 
   </div>
 

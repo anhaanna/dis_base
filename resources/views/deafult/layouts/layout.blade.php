@@ -161,16 +161,16 @@
                         Catalogue <i class="fas fa-download"></i>
                     </a>
                 <div class="social_icons">
-                    <a class="social social_facebook" href="https://web.facebook.com/disguisefragrances?_rdc=1&_rdr">
+                    <a class="social social_facebook" href="https://web.facebook.com/disguisefragrances?_rdc=1&_rdr" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="social social_twitter" href="https://twitter.com/disguiseuae">
+                    <a class="social social_twitter" href="https://twitter.com/disguiseuae" target="_blank">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="social social_youtube" href="https://www.youtube.com/watch?v=I9pQ1cs68uw">
+                    <a class="social social_youtube" href="https://www.youtube.com/watch?v=I9pQ1cs68uw" target="_blank">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/">
+                    <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <!-- <a href="{{ url('images/Brochure.pdf') }}" download="Brochure">

@@ -76,7 +76,7 @@
             {{ csrf_field() }}
             <div class="cont-form">
               @if(Session::has('flash_message'))
-                  <div class="thank-you">{{ Session::get('flash_message') }}</div>
+                  <div class="subc">{{ Session::get('flash_message') }}</div>
                 @endif
               <div class="row row-brd">
                 <input class="pink-bg" type="text" name="name" placeholder="Name">
@@ -98,12 +98,12 @@
                   <div class="errors">{{ $errors->first('subject') }}</div>
                 @endif
               </div>
-              <div class="row">
-                <textarea name="message" placeholder="Message" class="pink-bg"></textarea>
-                @if($errors->has('message'))
-                  <div class="errors">{{ $errors->first('message') }}</div>
-                @endif
-              </div>
+            </div>
+            <div class="row">
+              <textarea name="message" placeholder="Message" class="pink-bg"></textarea>
+              @if($errors->has('message'))
+                <div class="errors">{{ $errors->first('message') }}</div>
+              @endif
             </div>
             <button class="send" name="send">
               Send

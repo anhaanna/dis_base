@@ -60,6 +60,27 @@ class Products extends Controller
 
 
 
+    public function newsletter(Request $request){
+        //dd($request->all());
+        $this-> validate($request, [
+            'sub_name' => 'required',
+            'sub_email' => 'required|email',
+        ]);
+
+        Mail::send('emails.subscribe-message', [
+            'sub_name' => $request->sub_name,
+            'sub_email' => $request->sub_email,
+        ], function($mail) use($request){
+            $mail->from($request->sub_email, $request->sub_name);
+
+            $mail->to('anna.hakobyan@aratours.travel')-> subject('Contact Message');
+        });
+
+        return redirect()->back()->with('flash_message', "Thank you for your subscription");
+    }
+
+
+
     public function error(){
         return view('error',['allproducts'=>$this->allproducts]);
     }

@@ -12,6 +12,7 @@
 */
 
 Route::get('/', ['uses'=>'Products@menuproducts','as'=>'home']);
+Route::post('/', ['uses'=>'Products@newsletter','as'=>'home.newsletter']);
 Route::get('/the-brand/',['uses'=>'Products@brand','as'=>'the-brand/']);
 Route::get('/contact-us/',['uses'=>'Products@contact','as'=>'contact-us/']);
 Route::post('/contact-us/',['uses'=>'Products@store','as'=>'contact-us.store']);
