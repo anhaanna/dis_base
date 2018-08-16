@@ -30,7 +30,7 @@
 
     <div class="part-right">
 
-    <!-- AYSTEX DESCRIPTION -->
+    <!-- DESCRIPTION -->
       <h1 class="product-title">{{ $product[0]['title'] }}</h1>
       {!! $product[0]['description'] !!}
     <!-- END DESCRIPTION -->
@@ -64,37 +64,37 @@
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="{!! url('/images/related/10-Carnival-Women-Perfume-White-300x300.jpg') !!}"></a>
+                  <a href="{{ route('/product',['name'=> 'carnival-women-eau-de-toilette']) }}"><img src="{!! url('/images/products/10-Carnival-Women-Perfume-White-600x600.jpg') !!}"></a>
                 </div>
                 <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
                 </div> -->
                 <div class="read-more">
-                  <a href="#"><p>READ MORE</p></a>
+                  <a href="{{ route('/product',['name'=> 'carnival-women-eau-de-toilette']) }}"><p>READ MORE</p></a>
                 </div>
             </div>
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="{!! url('/images/related/10-Carnival-Women-Perfume-White-300x300.jpg') !!}"></a>
+                  <a href="{{ route('/product',['name'=> 'reflection-women-perfumed-deodorant']) }}"><img src="{!! url('/images/products/10-Reflection-Women-white-deo-600x600.jpg') !!}"></a>
                 </div>
                 <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
                 </div> -->
                 <div class="read-more">
-                  <a href="#"><p>READ MORE</p></a>
+                  <a href="{{ route('/product',['name'=> 'reflection-women-perfumed-deodorant']) }}"><p>READ MORE</p></a>
                 </div>
             </div>
 
             <div class="rel-item">
                 <div class="rel-item-white">
-                  <a href="#"><img src="{!! url('/images/related/10-Carnival-Women-Perfume-White-300x300.jpg') !!}"></a>
+                  <a href="{{ route('/product',['name'=> 'vibe-women']) }}"><img src="{!! url('/images/products/vibe-women.jpg') !!}"></a>
                 </div>
                 <!-- <div class="rel-item-black">
                   <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
                 </div> -->
                 <div class="read-more">
-                  <a href="#"><p>READ MORE</p></a>
+                  <a href="{{ route('/product',['name'=> 'vibe-women']) }}"><p>READ MORE</p></a>
                 </div>
             </div>
 
