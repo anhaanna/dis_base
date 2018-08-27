@@ -107,7 +107,8 @@ class Products extends Controller
         $search = Input::get('search');
         //dd($search);
         
-            $products = Products_model::where('title', 'LIKE', '%' . $search . '%')->get();
+            $products = Products_model::where('title', 'LIKE', '%' . $search . '%')
+            ->orWhere('subcategory', 'LIKE', '%' . $search . '%')->get();
 
             //print_r( $products);
             if ($search != "") {

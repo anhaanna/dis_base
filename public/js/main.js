@@ -132,4 +132,7 @@ $("#search-mob").click(function(){
   $(".fa-times").css('display', 'block')
 })
 
+$(".fa-times").click(function(){
+  $(".search-form-mob").css('display', 'none');
+});
 })

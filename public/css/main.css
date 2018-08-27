@@ -2005,6 +2005,9 @@ i.fas.fa-angle-down {
   li.rec-li {
     margin: 0 auto;
   }
+  .rel-item{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 420px){
