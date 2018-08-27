@@ -2,8 +2,8 @@
 
 @section('header')
 <head>
-    <title></title>
-
+   <title> @yield('title') Disguise Fragrances</title>
+    <link href="{{ url('favicon.ico') }}" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=" {{ url('css/main.css') }} ">
@@ -173,10 +173,17 @@
                     <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <!-- <a href="{{ url('images/Brochure.pdf') }}" download="Brochure">
-                        <i class="fas fa-download"></i>
-                    </a> -->
+                    <i id="search" class="fas fa-search"></i>
+
                 </div>
+                <form class="search-form" action="/search" method="POST" role="search">
+                          {{ csrf_field() }}
+                            <input id="search" type="text" name="search">
+                            <button id="search-icon" type="submit">
+                              <i class="fas fa-search"></i>
+                            </button>
+                            <i class="fas fa-times"></i>
+                </form>
             </div>
       </div>
       </div>
@@ -197,7 +204,7 @@
 
   <nav class="hamburger-nav">
 
-       <ul>
+       <ul style="position: relative;">
 
 
 
@@ -295,11 +302,21 @@
                     <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="/images/Brochure.pdf" download="Brochure">
+                    <a class="social" href="/images/Brochure.pdf" download="Brochure">
                         <i class="fas fa-download"></i>
                     </a>
+                    <a class="social"><i id="search-mob" class="fas fa-search"></i></a>
                 </div>
+                
       </li>
+                <form class="search-form-mob" action="/search" method="POST" role="search">
+                          {{ csrf_field() }}
+                            <input id="search-mob" type="text" name="search">
+                            <button id="search-icon-mob" type="submit">
+                              <i class="fas fa-search"></i>
+                            </button>
+                            <i class="fas fa-times"></i>
+                </form>
 
 
 
@@ -351,18 +368,18 @@
                   <h4 class="footer-h4">Find Us</h4>
                   <div class="footer-soc">
                     <div>
-                      <a class="social-footer social_facebook" href="https://web.facebook.com/disguisefragrances?_rdc=1&_rdr">
+                      <a class="social-footer social_facebook" target="_blank" href="https://web.facebook.com/disguisefragrances?_rdc=1&_rdr">
                           <i class="fab fa-facebook-f"></i>
                       </a>
-                      <a class="social-footer social_twitter" href="https://twitter.com/disguiseuae">
+                      <a class="social-footer social_twitter" target="_blank" href="https://twitter.com/disguiseuae">
                           <i class="fab fa-twitter"></i>
                       </a>
                     </div>
                     <div>
-                      <a class="social-footer social_youtube" href="https://www.youtube.com/watch?v=I9pQ1cs68uw">
+                      <a class="social-footer social_youtube" target="_blank" href="https://www.youtube.com/watch?v=I9pQ1cs68uw">
                           <i class="fab fa-youtube"></i>
                       </a>
-                      <a class="social-footer social_instagram" href="https://www.instagram.com/disguisefragrances/">
+                      <a class="social-footer social_instagram" target="_blank" href="https://www.instagram.com/disguisefragrances/">
                           <i class="fab fa-instagram"></i>
                       </a>
                     </div>
@@ -385,7 +402,7 @@
 
       <div class="copyright">
          <p class="center">
-            Copyright © 2016 Disguise Fragrances
+            Copyright © <?= date("Y"); ?> Disguise Fragrances
             <!-- <a href="#">Terms of Use </a>
             <a href="#"> Privacy Policy</a> -->
          </p>

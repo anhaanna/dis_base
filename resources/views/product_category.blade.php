@@ -8,7 +8,9 @@
       <div class="breadcrumb">
         <a class="menu" href="/">Disguise Fragrances</a>
         <span class="right-arrow"><i class="fas fa-angle-right"></i></span>
-        <span class="brd-current">text</span>
+        <span class="brd-current">
+          {{ $data[0]['category']}}'s  {{ $data[0]['subcategory'] }}
+        </span>
       </div>
     </div>
   </div>
@@ -19,7 +21,7 @@
       <div class="categ-products">
 
             <div class="cat-p">
-              <p>Showing all 6 results</p>
+              <p>Showing all results</p>
             </div>
             <div class="rel-items">
               @foreach($data as $product)
@@ -29,13 +31,8 @@
                                     <img src="{{ url('/images/products/'.$product['photo_white']) }}">
                                   </a>
                                 </div>
-                                <!-- <div class="rel-item-black cat-img">
-                                  <a href="{{ route('/product',['name'=>$product['url_title']]) }}">
-                                    <img src=" {{ url('images/products/'.$product['photo_black']) }} ">
-                                  </a>
-                                </div> -->
                                 <div class="read-more">
-                                  <a href="#"><p>READ MORE</p></a>
+                                  <a href="{{ route('/product',['name'=>$product['url_title']]) }}"><p>READ MORE</p></a>
                                 </div>
                             </div>
               @endforeach

@@ -1,4 +1,4 @@
-
+@section('title',  $product[0]['title'].' |' )
 @extends('deafult.layouts.layout')
 @section('content')
 
@@ -37,13 +37,13 @@
 
       <div class="product-social">
         <ul>
-          <li><a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://test.loc&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://twitter.com/intent/tweet?url=http://test.loc/&amp;" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://plus.google.com/share?url=http://test.loc"
+          <li><a href="https://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://disguise.ae&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/intent/tweet?url=http://disguise.ae/&amp;" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://plus.google.com/share?url=http://disguise.ae"
       target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-google-plus-g"></i></a></li>
-          <li><a href="https://www.tumblr.com/share/link?url=http://test.loc"
+          <li><a href="https://www.tumblr.com/share/link?url=http://disguise.ae"
      target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-tumblr"></i></a></li>
-          <li><a href="https://www.pinterest.com/pin/create/button/?url=http://test.loc" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a href="https://www.pinterest.com/pin/create/button/?url=http://disguise.ae" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><i class="fab fa-pinterest-p"></i></a></li>
         </ul>
       </div>
 
@@ -52,55 +52,32 @@
   </div>
 
 
-      <div class="purple">
+      <div class="purple mid">
           <div class="cat-content">
             <h4 class="rec rec-h4">RELATED PRODUCTS</h4>
           </div>
         </div>
 
-  <div class="rel-products">
+ <div class="rel-products">
      <div class="mid">
         <div class="rel-items">
-
+  
+          @foreach($allproducts['all'] as $all)
             <div class="rel-item">
+              <a href="{{ route('/product',['name'=>$all['url_title']]) }}">
                 <div class="rel-item-white">
-                  <a href="{{ route('/product',['name'=> 'carnival-women-eau-de-toilette']) }}"><img src="{!! url('/images/products/10-Carnival-Women-Perfume-White-600x600.jpg') !!}"></a>
+                    <img src="{{ url('/images/products/'.$all['photo_white']) }}">
                 </div>
-                <!-- <div class="rel-item-black">
-                  <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
-                </div> -->
                 <div class="read-more">
-                  <a href="{{ route('/product',['name'=> 'carnival-women-eau-de-toilette']) }}"><p>READ MORE</p></a>
+                  <p>READ MORE</p>
                 </div>
+              </a>
             </div>
-
-            <div class="rel-item">
-                <div class="rel-item-white">
-                  <a href="{{ route('/product',['name'=> 'reflection-women-perfumed-deodorant']) }}"><img src="{!! url('/images/products/10-Reflection-Women-white-deo-600x600.jpg') !!}"></a>
-                </div>
-                <!-- <div class="rel-item-black">
-                  <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
-                </div> -->
-                <div class="read-more">
-                  <a href="{{ route('/product',['name'=> 'reflection-women-perfumed-deodorant']) }}"><p>READ MORE</p></a>
-                </div>
-            </div>
-
-            <div class="rel-item">
-                <div class="rel-item-white">
-                  <a href="{{ route('/product',['name'=> 'vibe-women']) }}"><img src="{!! url('/images/products/vibe-women.jpg') !!}"></a>
-                </div>
-                <!-- <div class="rel-item-black">
-                  <a href="#"><img src="../assets/images/related/10-Carnival-Women-Perfume-Black-300x300.jpg"></a>
-                </div> -->
-                <div class="read-more">
-                  <a href="{{ route('/product',['name'=> 'vibe-women']) }}"><p>READ MORE</p></a>
-                </div>
-            </div>
-
+          @endforeach
+            
         </div>
      </div>
-  </div>
+  </div> 
 
 
 </div>

@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Input;
 use Mail;
 use Illuminate\Http\Request;
 use App\Products_model;
+
 
 class Products extends Controller
 {
@@ -16,6 +17,7 @@ class Products extends Controller
         $women_parfumes   = Products_model::where('category','women')->where('subcategory','perfumes')->get();
         $men_nogas = Products_model::where('category','men')->where('subcategory','nogas')->get();
         $women_nogas   = Products_model::where('category','women')->where('subcategory','nogas')->get();
+        $all =  Products_model::inRandomOrder()->take(3)->get();
 
         $allproducts = ['mens_deodorants'=>$mens_deodorants,
                         'mens_parfumes'=>$mens_parfumes,
@@ -23,6 +25,7 @@ class Products extends Controller
                         'women_parfumes'=>$women_parfumes,
                         'men_nogas'=>$men_nogas,
                         'women_nogas'=>$women_nogas,
+                        'all'=>$all,
                         ];
         $this->allproducts = $allproducts;
     }
@@ -98,6 +101,23 @@ class Products extends Controller
         $categorys = str_replace('-', '_', $name);
         $data = $this->allproducts[$categorys];
         return view('product_category',['data'=>$data,'allproducts'=>$this->allproducts]);
+    }
+
+    public function search(){
+        $search = Input::get('search');
+        //dd($search);
+        
+            $products = Products_model::where('title', 'LIKE', '%' . $search . '%')->get();
+
+            //print_r( $products);
+            if ($search != "") {
+                return view('search',['products'=>$products,'allproducts'=>$this->allproducts]);
+            }
+            else{
+                return view('error',['allproducts'=>$this->allproducts]);
+            }
+        
+        
     }
 
 }

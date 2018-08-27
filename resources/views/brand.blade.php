@@ -1,3 +1,4 @@
+@section('title',  'The Brand |' )
 @extends('deafult.layouts.layout')
 @section('content')
 

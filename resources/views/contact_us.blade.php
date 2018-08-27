@@ -1,3 +1,4 @@
+@section('title',  'Contact Us |' )
 @extends('deafult.layouts.layout')
 @section('content')
 
@@ -74,10 +75,10 @@
           </div>
           <form method="post" action="{{route('contact-us.store')}}">
             {{ csrf_field() }}
+             @if(Session::has('flash_message'))
+               <div class="thank-you">{{ Session::get('flash_message') }}</div>
+             @endif
             <div class="cont-form">
-              @if(Session::has('flash_message'))
-                  <div class="subc">{{ Session::get('flash_message') }}</div>
-                @endif
               <div class="row row-brd">
                 <input class="pink-bg" type="text" name="name" placeholder="Name">
                 @if($errors->has('name'))
@@ -151,7 +152,7 @@
           }
       }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlERI11sUGhp67FRrIt5XKETpUUKwkog&callback=initMap"
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBerOrEXXDA_zY0PnJzFA-L7z3amW6RP-s&callback=initMap"
   type="text/javascript"></script>
 
 

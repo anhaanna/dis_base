@@ -140,7 +140,7 @@ h4.rec.rec-h4 {
 }
 
 .purple{
-  height: 38px;
+  height: 40px;
   width: 100%;
   background: #211532;
 }
@@ -167,7 +167,7 @@ h4.rec.rec-h4 {
   color: #ae8e69;
   font-size: 14px;
   font-weight: 400;
-  line-height: 2em;
+  line-height: 1em;
   display: inline-block;
   font-family: Raleway,sans-serif;
   text-decoration: none;
@@ -197,7 +197,6 @@ h4.rec.rec-h4 {
   display: inline-block;
   font-family: Raleway,sans-serif;
   text-decoration: none;
-  text-transform: capitalize;
 }
 .middle-product{
   position: relative;
@@ -342,7 +341,7 @@ h4.rec.rec-h4 {
   max-width: 1300px;
   display: flex;
   justify-content: space-between;
-  margin: 40px auto 80px;
+  margin: 0 auto;
 }
 .rel-products{
   padding: 30px 0;
@@ -356,8 +355,7 @@ h4.rec.rec-h4 {
 .rel-item-white{
   opacity: 1;
   transition: .15s;
-  width: 60%;
-  margin: 0 auto 50px;
+  width: 300px;
 }
 .rel-item-white img{
   width: 100%;
@@ -378,19 +376,18 @@ h4.rec.rec-h4 {
 }
 .rel-item{
   position: relative;
-  width: 33.3%;
+  width: 33%;
 }
 .read-more{
+  position: absolute;
   bottom: 0;
   background: #211532;
-  color: #fff;
-  padding: 0;
-  margin-left: 30%;
+  width: 300px;
+  padding:0;
   opacity: 0;
-  position: absolute;
+  color: #fff;
   text-align: center;
   transition: .3s;
-  width: 40%;
 }
 
 .read-more:hover{
@@ -472,10 +469,8 @@ img.big-white {
     font-size: 13px; 
     margin-left: 20px; 
 }
-.social_icons i:hover{color:#211532;}
 a.social {
     margin-right: 5px;
-    text-align: center;
 }
 .right-side {
     float: right;
@@ -575,7 +570,7 @@ a.social {
 .left-side, .right-side {
     width: 20%;
     height: 100%;
-    //position: relative;
+    position: relative;
 }
 .left-side a{
   max-height: 80px;
@@ -585,76 +580,6 @@ a.social {
   display: flex;
   justify-content: flex-end;
 }
-.search-form {
-  display: none;
-  position: absolute;
-  width: 100%;
-}
-input#search {
-  width: 90%;
-  height: 40px;
-  border: 0;
-  padding-left: 10px;
-}
-button#search-icon {
-  height: 40px;
-  width: 10%;
-  border: 0;
-  padding: 0;
-  background: #fff;
-  cursor: pointer;
-  margin: 0;
-}
-input#search:focus{
-  outline: 0;
-}
-i#search {
-  color: #211532;
-}
-.fa-times{
-  position: absolute;
-  right: 15%;
-  top: 13px;
-  color: #211532;
-}
-
-
-.search-form-mob {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  border: 1px solid #ae8e69;
-}
-input#search-mob {
-  width: 85%;
-  height: 40px;
-  border: 0;
-  padding-left: 10px;
-}
-button#search-icon-mob {
-  height: 40px;
-  width: 15%;
-  border: 0;
-  padding: 0;
-  background: #fff;
-  cursor: pointer;
-  margin: 0;
-}
-input#search-mob:focus{
-  outline: 0;
-}
-.fa-search{
-  color: #ae8e69;
-  cursor: pointer;
-}
-.fa-times{
-  position: absolute;
-  right: 15%;
-  top: 13px;
-  color: #ae8e69;
-}
-
 .pink-right-side {
     float: right;
     line-height: 35px;
@@ -677,7 +602,7 @@ input#search-mob:focus{
     position: relative;
 }
 .pd-a{
-  padding: 0 6px;
+  padding-left: 20px;
 }
 .wrapper{
   width: 90%;
@@ -713,9 +638,6 @@ ul.nav-ul  li {
   letter-spacing: 2px;
   font-size: 13px;
 }
-ul.nav-ul  li:hover, .pink-right-side>a:hover {
-  background: #987f62;
-}
 .nav-img img {
   max-width: 150px;
 }
@@ -727,20 +649,51 @@ ul.nav-ul  li:hover, .pink-right-side>a:hover {
 
 
 /* search */
-.search-flex-mid{
-      width: 90%;
-    max-width: 1300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 40px auto 80px;
+.search{
+  margin: 0;
+  padding: 0 0 0 170px;
+  box-sizing: border-box;
+  font-size: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 90px;
+  opacity: 0;
+  transition: .5s;
+  z-index: -1;
+  border: none;
+  box-shadow: none;
+  color: #a3a3a3;
+  font-size: 18px;
+  font-weight: 400;
+  outline: 0;
+  outline-offset: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+  font-family: 'Raleway',sans-serif;
 }
-a.search-title {
-    text-decoration: none;
-    text-align: center;
+i.fas.fa-times {
+  color: #757575;
+  z-index: 555555;
+  position: absolute;
+  right: 170px;
+  top: 40px;
+  opacity: 0;
+  z-index: -1;
+  cursor: pointer;
+  transition: .5s;
 }
-.search-img{
-  width: 30%;
+div.search-icon {
+  color: white;
+  padding: 0 0 0 20px;
+  border-left: 1px solid;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.search-icon i {
+    line-height: 20px;
 }
 /* dropdown */
 .dropdown{
@@ -748,7 +701,7 @@ a.search-title {
   padding: 0;
   box-sizing: border-box;
   width: 800px;
-  left: calc(50vw - 222px);
+  right: -40%;
   display:flex;
   justify-content: space-between;
   position:absolute;
@@ -783,8 +736,7 @@ a.search-title {
 }
 .nav-box ul li{
   line-height: 0;
-  padding: 5px;
-  text-align: center;
+  padding: 5px 5px 5px 20px;
 }
 .nav-box ul li a{
   color: #000;
@@ -796,15 +748,16 @@ a.search-title {
 .nav-box h3{
   color: #ae8e69;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 0 0 20px 20px;
   line-height: 1;
   font-weight: 800;
   font-size: 13px;
   letter-spacing: 1px;
-  text-align: center;
+      margin-bottom: 10px;
 }
 .nav-box ul li h3{
-  padding: 10px;
+  line-height: 0;
+  padding: 0;
 }
 
 /* middle content */
@@ -1442,7 +1395,7 @@ p.center {
   color: #0e0e0e;
   display: inline-block;
   vertical-align: middle;
-  font-size: 40px;
+  font-size: 62px;
   line-height: 1.2em;
   font-weight: 700;
   letter-spacing: 4px;
@@ -1809,6 +1762,9 @@ i.fas.fa-angle-down {
   .footer-box, .footer-box.disguise-logo{
     width: 49%;
   }
+  .rel-item{
+    width: 50%;
+  }
   .brand-content{
     flex-wrap: wrap;
     padding: 1px 0;
@@ -1923,12 +1879,11 @@ i.fas.fa-angle-down {
     font-size: 40px;
     line-height: 50px;
   }
-  .error-txt {
-    top: 70px;
+  .search{
+    padding-left: 50px;
   }
-  .error-middle {
-    height: 200px;
-    padding-top: 0;
+  i.fas.fa-times{
+    right: 50px;
   }
   .cat-wrap{
     flex-wrap: wrap;
@@ -1950,22 +1905,6 @@ i.fas.fa-angle-down {
 }
   .footer-box.disguise-logo img{
     display: block;
-    margin: 0 auto;
-  }
-  .rel-item-white {
-    width: 100%;
-    margin: 50px 0;
-  }
-  .read-more {
-    margin-left: 3%;
-    width: 94%;
-    opacity: 1;
-  }
-  .rel-item:hover .read-more {
-    padding: 0;
-  }
-  .search-img{
-    width: 100%;
     margin: 0 auto;
   }
 
@@ -1998,6 +1937,11 @@ i.fas.fa-angle-down {
   .search-txt h1{
     font-size: 25px;
     line-height: 30px;
+  }
+  .rel-item{
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
   .rec-ul{
     flex-wrap: wrap;

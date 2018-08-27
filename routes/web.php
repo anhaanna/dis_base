@@ -22,3 +22,4 @@ Route::get('/error/',['uses'=>'Products@error','as'=>'error/']);
 Route::get('/product/{name?}',['uses'=>'Products@pagerender','as'=>'/product']);
 Route::get('product-category/{name}',['uses'=>'Products@categoryrender','as'=>'/product-category']);
 // Route::get('/admin''uses'=>'Admin@login')
+Route::any('/search', ['uses'=>'Products@search','as'=>'search']);
