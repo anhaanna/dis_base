@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Input;
 use Mail;
 use Illuminate\Http\Request;
 use App\Products_model;
+use DB;
 
 
 class Products extends Controller
@@ -119,6 +120,20 @@ class Products extends Controller
             }
         
         
+    }
+
+    public function admin(){
+        return redirect('admin/adminpanel');
+    }
+    public function allproducts(){
+        return view('allproducts',['allproducts'=>$this->allproducts]);
+    }
+    public function changeproduct($id){
+        $product = DB::table('products')->where('id', $id)->first();
+        return view('editproduct',['product'=>$product]);
+    }
+    public function newproduct(){
+        return view('addproduct');
     }
 
 }

@@ -1,5 +1,5 @@
 {{-- {{ dd(Config::get('allproducts')) }} --}}
-
+@if(!empty($allproducts))
 @section('header')
 <head>
    <title> @yield('title') Disguise Fragrances</title>
@@ -416,3 +416,4 @@
     <a id="button"><i class="fas fa-long-arrow-alt-up"></i></a>
     </footer>
 @show
+@endif

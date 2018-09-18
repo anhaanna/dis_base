@@ -21,5 +21,16 @@ Route::post('/contact-us/',['uses'=>'Products@store','as'=>'contact-us.store']);
 Route::get('/error/',['uses'=>'Products@error','as'=>'error/']);
 Route::get('/product/{name?}',['uses'=>'Products@pagerender','as'=>'/product']);
 Route::get('product-category/{name}',['uses'=>'Products@categoryrender','as'=>'/product-category']);
-// Route::get('/admin''uses'=>'Admin@login')
 Route::any('/search', ['uses'=>'Products@search','as'=>'search']);
+/*ADMIN*/
+
+// Route::get('/admin',['uses'=>'Admin@login', 'as'=>'/admin']);
+// Route::post('/dashboard',['uses'=>'Admin@login_load', 'as'=>'/dashboard']);
+// Route::get('admin/adminpanel',['uses'=>'Products@admin', 'as'=>'admin/adminpanel']);
+Auth::routes();
+Route::get('newproduct',['uses'=>'Products@newproduct'])->middleware('auth');
+Route::get('/allproducts',['uses'=>'Products@allproducts','as'=>'/allproducts'])->middleware('auth');
+Route::get('changeproduct/{id}',['uses'=>'Products@changeproduct','as'=>'/changeproduct'])->middleware('auth');
+Route::post('changepassword/',['uses'=>'HomeController@changepassword','as'=>'/changepassword'])->middleware('auth');
+
+Route::get('/home', 'HomeController@index')->name('admin');
