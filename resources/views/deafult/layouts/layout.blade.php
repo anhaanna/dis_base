@@ -130,7 +130,7 @@
                   </ul>
                   </div>
                   <div class="nav-box box-3">
-                    <a href="{{ route('/product-category',['name'=>'men-nogas']) }}"><h3>MEN'S BODY SPRAY & ROLL-ON</h3></a>
+                    <a href="{{ route('/product-category',['name'=>'men-nogas']) }}"><h3>MEN'S BODY SPRAY</h3></a>
                     <div class="nav-img">
                       <a href="{{ route('/product-category',['name'=>'men-nogas']) }}">
                         <img src=" {{ url('images/ngm3.jpg') }}">
@@ -139,7 +139,7 @@
                     </div>
                   </div>
                   <div class="nav-box box-4">
-                    <a href="{{ route('/product-category',['name'=>'women-nogas']) }}"><h3>WOMEN'S BODY SPRAY & ROLL-ON</h3></a>
+                    <a href="{{ route('/product-category',['name'=>'women-nogas']) }}"><h3>WOMEN'S BODY SPRAY</h3></a>
                     <div class="nav-img">
 
                       <a href="{{ route('/product-category',['name'=>'women-nogas']) }}">
@@ -149,6 +149,9 @@
                   </div>
                 </div>
               </li>
+              <li><a style="color: #211532;" class="pd-a" href="{{ url('images/Catalogue.pdf') }}" download="Catalogue">
+                        Catalogue <i class="fas fa-download"></i></a></li>
+              <li><a class="pd-a" href="{{  route('contact-us/') }}">Contact Us</a></li>
 
           </ul>
         </div>
@@ -156,10 +159,10 @@
 
 
         <div class="pink-right-side">
-                <a class="pd-a" href="{{  route('contact-us/') }}">Contact Us</a>
-                <a style="color: #211532;" class="pd-a" href="{{ url('images/Brochure.pdf') }}" download="Catalogue">
+                <!-- <a class="pd-a" href="{{  route('contact-us/') }}">Contact Us</a>
+                <a style="color: #211532;" class="pd-a" href="{{ url('images/Catalogue.pdf') }}" download="Catalogue">
                         Catalogue <i class="fas fa-download"></i>
-                    </a>
+                    </a> -->
                 <div class="social_icons">
                     <a class="social social_facebook" href="https://web.facebook.com/disguisefragrances?_rdc=1&_rdr" target="_blank">
                         <i class="fab fa-facebook-f"></i>
@@ -302,7 +305,7 @@
                     <a class="social social_instagram" href="https://www.instagram.com/disguisefragrances/">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="social" href="/images/Brochure.pdf" download="Brochure">
+                    <a class="social" href="/images/Catalogue.pdf" download="Catalogue">
                         <i class="fas fa-download"></i>
                     </a>
                     <a class="social"><i id="search-mob" class="fas fa-search"></i></a>
@@ -356,8 +359,8 @@
 
                     </div>
                     <div>
-                      <a href="{{ route('/product-category',['name'=>'mens-parfumes']) }}">Men’s Perfumes</a>
-                      <a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">Women’s Perfumes</a>
+                      <a href="{{ route('/product-category',['name'=>'mens-deodorants']) }}">Men’s Deodorants</a>
+                      <a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">Women’s Deodorants</a>
                       <a href="{{ route('/product-category',['name'=>'men-nogas']) }}">Men’s No Gas</a>
                       <a href="{{ route('/product-category',['name'=>'women-nogas']) }}">Women’s No Gas</a>
                     </div>

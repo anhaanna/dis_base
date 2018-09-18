@@ -177,7 +177,8 @@ h4.rec.rec-h4 {
   color: #fff;
 }
 .breadcrumb{
-  margin: 0 auto
+  margin: 0 auto;
+  text-align: center;
 }
 .right-arrow{
   color: #ae8e69;
@@ -193,7 +194,7 @@ h4.rec.rec-h4 {
 .brd-current{
   color: #ae8e69;;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 2em;
   display: inline-block;
   font-family: Raleway,sans-serif;
   text-decoration: none;
@@ -309,10 +310,6 @@ h4.rec.rec-h4 {
 }
 .posted a:hover, .tagged a:hover{
   color: #ea9195;
-}
-
-.product-social{
-  margin-bottom: 33px;
 }
 
 .product-social ul{
@@ -493,7 +490,7 @@ a.social {
 
 #carousel .item img {
   display: block;
-  max-height: 100%;
+  //max-height: 100%;
   width: 100%;
 }
 
@@ -581,7 +578,7 @@ a.social {
   max-height: 80px;
 }
 .right-side{
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
 }
@@ -672,7 +669,7 @@ input#search-mob:focus{
   justify-content: flex-end;
 }
 .pink-right-side {
-    width: 30%;
+    width: 10%;
     height: 100%;
     position: relative;
 }
@@ -680,7 +677,7 @@ input#search-mob:focus{
   padding: 0 6px;
 }
 .wrapper{
-  width: 90%;
+  width: 95%;
   max-width: 1300px;
   display: flex;
   margin: 0 auto;

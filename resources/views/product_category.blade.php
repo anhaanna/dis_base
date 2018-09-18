@@ -76,8 +76,8 @@
               <div class="category"><a href="{{ route('/product-category',['name'=>'mens-parfumes']) }}">Men's Perfumes </a> (6)</div> 
               <div class="category"><a href="{{ route('/product-category',['name'=>'women-deodorants']) }}">Women's Deodorants </a> (6)</div> 
               <div class="category"><a href="{{ route('/product-category',['name'=>'women-parfumes']) }}">Women's Perfumes </a> (6)</div>
-              <div class="category"><a href="{{ route('/product-category',['name'=>'men-nogas']) }}">Men’s Intense Body Spray & Roll-On </a> (3)</div>
-              <div class="category"><a href="{{ route('/product-category',['name'=>'women-nogas']) }}">Women’s Intense Body Spray & Roll-On </a> (3)</div>
+              <div class="category"><a href="{{ route('/product-category',['name'=>'men-nogas']) }}">Men’s Intense Body Spray</a> (3)</div>
+              <div class="category"><a href="{{ route('/product-category',['name'=>'women-nogas']) }}">Women’s Intense Body Spray</a> (3)</div>
           </div>
 </div>
         
