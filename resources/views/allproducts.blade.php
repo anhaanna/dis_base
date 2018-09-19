@@ -2,7 +2,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=" {{ url('css/main.css') }} ">
-    <link rel="stylesheet" href=" {{ url('css/owl.carousel.min.css') }} ">
     <link rel="stylesheet" href=" {{ url('css/owl.theme.default.min.css') }} ">
     <link rel="stylesheet" href=" {{ url('css/animate.css') }} ">
     <link rel="stylesheet" type="text/css" href=" {{ url('css/bootstrap.min.css') }} ">
@@ -10,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script type="text/javascript" src=" {{ url('js/jquery-3.2.1.min.js') }} "></script>
     <script type="text/javascript" src=" {{ url('js/main.js') }} "></script>
-    <script type="text/javascript" src=" {{ url('js/owl.carousel.min.js') }} "></script>
 <div class="col-lg-12">
 @foreach($allproducts as $k => $categoryes)
 		<table style="border: 2px solid #212529" class="table table-striped">

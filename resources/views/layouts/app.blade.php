@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -29,13 +30,13 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        DISGUISE
+                        <img src=" http://test.loc/images/LOGO-PNG.png " alt="logo" style="width: 130px;margin-top: -25px;">
                         {{-- {{ config('app.name', 'Laravel') }} --}}
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <button style="margin-left: 25px" type="button" class="" data-toggle="modal" data-target="#myModal">Change password</button>
+                    <button class="change_pass" style="margin-left: 25px; margin-top: 12px;" type="button" class="" data-toggle="modal" data-target="#myModal">Change password</button>
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
@@ -46,7 +47,7 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <!-- <li><a href="{{ route('register') }}">Register</a></li> -->
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -92,9 +93,9 @@
 
             <form action="{{route('/changepassword')}}" method="POST">
                 {{ csrf_field() }}
-                <input placeholder="new password" type="" name="password">
-                <input placeholder="confirm" type="" name="confirm">
-                <button>Change password</button>     
+                <input class="form-control pass_conf" placeholder="New Password" type="" name="password" required="">
+                <input class="form-control pass_conf" placeholder="Confirm Password" type="" name="confirm" required="">
+                <button class="change_pass">Change password</button>     
             </form>
           </div>
           <div class="modal-footer">

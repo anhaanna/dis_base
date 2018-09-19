@@ -70,3 +70,9 @@ li.menu-img img {
     background-color: #8224e3;
     border-color: #8224e3;
 }
+.pass_conf{
+  margin-bottom: 10px;
+}
+.change_pass{
+  padding: 0 10px;
+}

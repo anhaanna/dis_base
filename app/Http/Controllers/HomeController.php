@@ -56,12 +56,12 @@ class HomeController extends Controller
         if ($new_password==$confirm) {
             if (strlen($new_password)>5) {
                 DB::table('users')->where('id', $userId)->update(['password' =>bcrypt($new_password)]);
-                return view('home',['success'=>'changed','allproducts'=>$this->allproducts]);
+                return view('home',['success'=>'Password has been changed','allproducts'=>$this->allproducts]);
             }else{
-                return view('home',['message'=>'passworde karch ','allproducts'=>$this->allproducts]);
+                return view('home',['message'=>'The password is too short','allproducts'=>$this->allproducts]);
             }
         }else{
-            return view('home',['message'=>'confirme chi hamapatasxanum','allproducts'=>$this->allproducts]);
+            return view('home',['message'=>'The passwords do not match','allproducts'=>$this->allproducts]);
         }
         
     }
