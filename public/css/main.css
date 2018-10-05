@@ -18,6 +18,7 @@ a:hover, a:focus{
   height:400px;
   margin: 20px 0;
 }
+#website{ display:none; }
 
 table.table-product td li {
     float: left;

@@ -80,6 +80,7 @@
              @endif
             <div class="cont-form">
               <div class="row row-brd">
+                <input type="text" id="website" name="website"/>
                 <input class="pink-bg" type="text" name="name" placeholder="Name">
                 @if($errors->has('name'))
                   <div class="errors">{{ $errors->first('name') }}</div>

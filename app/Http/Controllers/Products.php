@@ -54,6 +54,7 @@ class Products extends Controller
             'contact_subject' => $request->subject,
             'contact_msg' => $request->message,
         ], function($mail) use($request){
+            if(!empty($_POST['website'])) die();
             $mail->from($request->email, $request->name);
 
             $mail->to('anna.hakobyan@aratours.travel')-> subject('Contact Message');
