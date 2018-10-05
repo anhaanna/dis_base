@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Admin Panel | Disguise Fragrances</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -30,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src=" http://test.loc/images/LOGO-PNG.png " alt="logo" style="width: 130px;margin-top: -25px;">
+                        <img src="http://disguise.ae/images/LOGO-PNG.png" alt="logo" style="width: 130px;margin-top: -25px;">
                         {{-- {{ config('app.name', 'Laravel') }} --}}
                     </a>
                 </div>
